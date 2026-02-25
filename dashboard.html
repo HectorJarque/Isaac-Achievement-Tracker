@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Logros - Isaac Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-dashboard">
+
+  <div class="scanlines"></div>
+
+  <!-- Barra superior de navegación -->
+  <header class="dashboard-header">
+    <a href="index.html" class="header-logo">
+      <span class="header-logo-icon">😭</span>
+      <span class="header-title">ISAAC TRACKER</span>
+    </a>
+
+    <div class="header-user" id="headerUser">
+      <div class="user-avatar-wrap">
+        <img id="userAvatar" src="" alt="Avatar" class="user-avatar" style="display:none;">
+        <div class="user-avatar-placeholder" id="userAvatarPlaceholder">?</div>
+      </div>
+      <span class="user-name vt323" id="userName">Cargando...</span>
+    </div>
+
+    <a href="index.html" class="btn-logout pixel-btn-sm">SALIR</a>
+  </header>
+
+  <!-- Barra de progreso global -->
+  <div class="global-progress-bar">
+    <div class="progress-info">
+      <span class="vt323" id="progressText">Cargando logros...</span>
+      <span class="vt323" id="progressPercent">0%</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill" style="width:0%"></div>
+    </div>
+  </div>
+
+  <!-- Filtros y búsqueda -->
+  <div class="filters-bar">
+    <!-- Filtro por versión -->
+    <div class="filter-group">
+      <span class="filter-label">VERSIÓN:</span>
+      <div class="filter-pills" id="versionFilters">
+        <button class="pill active" data-filter="version" data-value="all">TODAS</button>
+        <button class="pill v-rebirth" data-filter="version" data-value="rebirth">REBIRTH</button>
+        <button class="pill v-afterbirth" data-filter="version" data-value="afterbirth">AFTERBIRTH</button>
+        <button class="pill v-afterbirth-plus" data-filter="version" data-value="afterbirth_plus">AFTERBIRTH+</button>
+        <button class="pill v-repentance" data-filter="version" data-value="repentance">REPENTANCE</button>
+        <button class="pill v-repentance-plus" data-filter="version" data-value="repentance_plus">REPENTANCE+</button>
+      </div>
+    </div>
+
+    <!-- Filtro por estado -->
+    <div class="filter-group">
+      <span class="filter-label">ESTADO:</span>
+      <div class="filter-pills">
+        <button class="pill active" data-filter="status" data-value="all">TODOS</button>
+        <button class="pill status-unlocked" data-filter="status" data-value="unlocked">DESBLOQUEADOS</button>
+        <button class="pill status-locked" data-filter="status" data-value="locked">PENDIENTES</button>
+      </div>
+    </div>
+
+    <!-- Filtro por categoría -->
+    <div class="filter-group">
+      <span class="filter-label">CATEGORÍA:</span>
+      <div class="filter-pills">
+        <button class="pill active" data-filter="category" data-value="all">TODAS</button>
+        <button class="pill" data-filter="category" data-value="character">PERSONAJE</button>
+        <button class="pill" data-filter="category" data-value="challenge">DESAFÍO</button>
+        <button class="pill" data-filter="category" data-value="general">GENERAL</button>
+        <button class="pill" data-filter="category" data-value="item">OBJETO</button>
+      </div>
+    </div>
+
+    <!-- Búsqueda -->
+    <div class="filter-group">
+      <span class="filter-label">BUSCAR:</span>
+      <input type="text" id="searchInput" class="search-input pixel-input" placeholder="Escribe un nombre...">
+    </div>
+  </div>
+
+  <!-- Pantalla de carga -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-icon">😭</div>
+    <p class="vt323 loading-text">CARGANDO LOGROS...</p>
+    <div class="loading-dots">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- Pantalla de error -->
+  <div class="error-screen" id="errorScreen" style="display:none;">
+    <div class="error-icon">💀</div>
+    <p class="vt323" id="errorScreenText">Error al cargar los logros.</p>
+    <a href="index.html" class="pixel-btn" style="margin-top:1rem;">VOLVER AL INICIO</a>
+  </div>
+
+  <!-- Contenedor principal de logros, agrupados por versión -->
+  <main class="achievements-container" id="achievementsContainer" style="display:none;">
+  </main>
+
+  <!-- Modal de detalle de logro -->
+  <div class="modal-overlay" id="modalOverlay" style="display:none;">
+    <div class="modal-card">
+      <button class="modal-close pixel-btn-sm" id="modalClose">✕ CERRAR</button>
+      <div class="modal-header">
+        <img class="modal-icon" id="modalIcon" src="" alt="">
+        <div class="modal-titles">
+          <h2 class="modal-name" id="modalName"></h2>
+          <span class="modal-version-badge" id="modalVersionBadge"></span>
+        </div>
+        <div class="modal-status" id="modalStatus"></div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3 class="modal-section-title">DESCRIPCIÓN (Steam)</h3>
+          <p class="vt323 modal-desc" id="modalDesc"></p>
+        </div>
+        <div class="modal-section">
+          <h3 class="modal-section-title">CÓMO DESBLOQUEAR</h3>
+          <p class="vt323 modal-how" id="modalHow"></p>
+        </div>
+        <div class="modal-meta">
+          <span class="meta-tag" id="modalCategory"></span>
+          <span class="meta-tag" id="modalCharacter" style="display:none;"></span>
+          <span class="meta-tag modal-unlock-date" id="modalDate" style="display:none;"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

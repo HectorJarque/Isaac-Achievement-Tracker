@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Achievement Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-landing">
+
+  <!-- Fondo con efecto de lluvia de lágrimas pixeladas -->
+  <div class="bg-tears" id="bgTears"></div>
+  <!-- Efecto de scanlines -->
+  <div class="scanlines"></div>
+
+  <main class="landing-container">
+    <div class="landing-card">
+
+      <!-- Logo principal -->
+      <div class="logo-area">
+        <div class="logo-icon">😭</div>
+        <h1 class="game-title">ISAAC</h1>
+        <h2 class="game-subtitle">Achievement Tracker</h2>
+        <div class="pixel-divider"></div>
+      </div>
+
+      <!-- Descripción -->
+      <div class="landing-description">
+        <p class="vt323">Sigue el rastro de todos tus logros en</p>
+        <p class="versions-list">
+          <span class="version-tag v-rebirth">REBIRTH</span>
+          <span class="version-tag v-afterbirth">AFTERBIRTH</span>
+          <span class="version-tag v-afterbirth-plus">AFTERBIRTH+</span>
+          <span class="version-tag v-repentance">REPENTANCE</span>
+          <span class="version-tag v-repentance-plus">REPENTANCE+</span>
+        </p>
+        <p class="vt323">Incluye cómo desbloquear cada logro,<br>agrupados por versión y personaje.</p>
+      </div>
+
+      <!-- Mensaje de error login fallido -->
+      <div class="error-msg" id="errorMsg" style="display:none;">
+        <span id="errorText">Error al conectar con Steam.</span>
+      </div>
+
+      <!-- Botón de login -->
+      <div class="login-area">
+        <a href="#" id="steamLoginBtn" class="btn-steam pixel-btn">
+          <img src="https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_01.png" 
+               alt="Iniciar sesión con Steam"
+               class="steam-btn-img">
+        </a>
+        <p class="hint-text vt323">
+        Tu perfil de Steam debe ser <strong>PÚBLICO</strong><br>
+          para que podamos leer tus logros.
+        </p>
+      </div>
+
+      <!-- Stats decorativos -->
+      <div class="stat-boxes">
+        <div class="stat-box">
+          <span class="stat-num">637</span>
+          <span class="stat-label">Logros totales</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">5</span>
+          <span class="stat-label">Versiones</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">34</span>
+          <span class="stat-label">Personajes</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+
+    // TODO: Cambiar al Vercer real
+    const BACKEND_URL = 'https://tu-backend.vercel.app';
+
+    // El botón de login redirige al backend, que redirige a Steam
+    document.getElementById('steamLoginBtn').href = `${BACKEND_URL}/api/auth/login`;
+
+    // Errores
+    const params = new URLSearchParams(window.location.search);
+    const error = params.get('error');
+    if (error) {
+      const errorMsg = document.getElementById('errorMsg');
+      const errorText = document.getElementById('errorText');
+      const messages = {
+        login_cancelled: 'Cancelaste el inicio de sesión en Steam.',
+        invalid_auth: 'Error: la autenticación de Steam no fue válida.',
+        no_steamid: 'No se pudo obtener tu Steam ID.',
+        server_error: 'Error interno del servidor. Inténtalo de nuevo.',
+      };
+      errorText.textContent = messages[error] || 'Error desconocido.';
+      errorMsg.style.display = 'block';
+    }
+
+    const bgTears = document.getElementById('bgTears');
+    for (let i = 0; i < 30; i++) {
+      const tear = document.createElement('div');
+      tear.className = 'tear';
+      tear.style.left = Math.random() * 100 + 'vw';
+      tear.style.animationDuration = (2 + Math.random() * 4) + 's';
+      tear.style.animationDelay = (Math.random() * 5) + 's';
+      tear.style.opacity = 0.1 + Math.random() * 0.2;
+      bgTears.appendChild(tear);
+    }
+  </script>
+</body>
+</html>
