@@ -1,5 +1,5 @@
 {
-  "_info": "Base de datos de logros de The Binding of Isaac. Match por displayName exacto (case-insensitive). Versiones: rebirth, afterbirth, afterbirth_plus, repentance, repentance_plus.",
+  "_info": "Base de datos completa de logros de The Binding of Isaac (Rebirth, Afterbirth, Afterbirth+, Repentance, Repentance+). Match por displayName exacto (case-insensitive). Repentance+ solo contiene los 3 logros de juego online.",
   "_errors_corrected": [
     "Rebirth #172 Wrapped Baby: CORREGIDO a Lazarus (fuente tenía Azazel).",
     "Rebirth #173 Begotten Baby: CORREGIDO a Azazel (fuente tenía Lazarus).",
@@ -11,7 +11,9 @@
     "Afterbirth #232 Kidney Stone: CORREGIDO a Onan's Streak (#29).",
     "Afterbirth #233 Blank Rune: CORREGIDO a The Guardian (#30).",
     "Afterbirth #270 I RULE!: Condición triple ambigua simplificada.",
-    "Afterbirth #273 Onan's Streak (challenge): Condición ambigua simplificada."
+    "Afterbirth #273 Onan's Streak (challenge): Condición ambigua simplificada.",
+    "Repentance #516 DELETE THIS: Nombre y descripción son un error real dejado por los desarrolladores (confirmado en juego).",
+    "Repentance #538 Temperance: Descripción 'INVALID_DESCRIPTION' es otro artefacto dejado en el juego."
   ],
   "achievements": [
     {
@@ -5188,6 +5190,3384 @@
         "THE FORGOTTEN",
         "BOSS",
         "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Bethany",
+      "howToUnlock": "Supera el modo Difícil como Lazarus sin morir en ningún momento (derrota a Mom's Heart o It Lives!).",
+      "version": "repentance",
+      "category": "character",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "BETHANY",
+        "HARD MODE",
+        "LAZARUS"
+      ]
+    },
+    {
+      "displayName": "Jacob and Esau",
+      "howToUnlock": "Derrota a Mother por primera vez para desbloquear a Jacob and Esau como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "JACOB AND ESAU",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Planetarium",
+      "howToUnlock": "Recoge 3 objetos con la etiqueta 'stars' en una misma partida para desbloquear el Planetarium como sala especial.",
+      "version": "repentance",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "A Secret Exit",
+      "howToUnlock": "Derrota a Hush 3 veces para desbloquear la salida secreta al Blue Womb alternativo.",
+      "version": "repentance",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Forgotten Lullaby",
+      "howToUnlock": "Destruye el cráneo de The Siren justo después de derrotarla.",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Fruity Plum",
+      "howToUnlock": "Derrota a Baby Plum 10 veces en total.",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Plum Flute",
+      "howToUnlock": "Deja escapar a Baby Plum sin derrotarla (no la ataques hasta que huya).",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Rotten Heart",
+      "howToUnlock": "Entra en el Corpse (área secreta del Womb) por primera vez.",
+      "version": "repentance",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Dross",
+      "howToUnlock": "Derrota a todos los jefes de Downpour para desbloquear Dross (su alternativo).",
+      "version": "repentance",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Ashpit",
+      "howToUnlock": "Derrota a todos los jefes de Mines para desbloquear Ashpit (su alternativo).",
+      "version": "repentance",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Gehenna",
+      "howToUnlock": "Derrota a todos los jefes de Mausoleum para desbloquear Gehenna (su alternativo).",
+      "version": "repentance",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Red Key",
+      "howToUnlock": "Abre el baúl de Mom en Home para obtener el Red Key.",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "Wisp Baby",
+      "howToUnlock": "Derrota a Mom's Heart o It Lives! en modo Difícil como Bethany.",
+      "version": "repentance",
+      "category": "co-op",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "BETHANY",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Book of Virtues",
+      "howToUnlock": "Derrota a Isaac como Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BETHANY",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Urn of Souls",
+      "howToUnlock": "Derrota a Satan como Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BETHANY",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Blessed Penny",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BETHANY",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Alabaster Box",
+      "howToUnlock": "Derrota a The Lamb como Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BETHANY",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Beth's Faith",
+      "howToUnlock": "Completa el Boss Rush como Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BETHANY",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Soul Locket",
+      "howToUnlock": "Derrota a Ultra Greed como Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BETHANY",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Divine Intervention",
+      "howToUnlock": "Derrota a Hush como Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BETHANY",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Vade Retro",
+      "howToUnlock": "Derrota a Ultra Greedier como Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BETHANY",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Star of Bethlehem",
+      "howToUnlock": "Derrota a Delirium como Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BETHANY",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Hope Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como Bethany.",
+      "version": "repentance",
+      "category": "co-op",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "BETHANY",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Glowing Baby",
+      "howToUnlock": "Derrota a Mega Satan como Bethany.",
+      "version": "repentance",
+      "category": "co-op",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "BETHANY",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Double Baby",
+      "howToUnlock": "Derrota a Mom's Heart o It Lives! en modo Difícil como Jacob and Esau.",
+      "version": "repentance",
+      "category": "co-op",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "JACOB AND ESAU",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "The Stairway",
+      "howToUnlock": "Derrota a Isaac como Jacob and Esau.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JACOB AND ESAU",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Red Stew",
+      "howToUnlock": "Derrota a Satan como Jacob and Esau.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JACOB AND ESAU",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Birthright",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como Jacob and Esau.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JACOB AND ESAU",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Damocles",
+      "howToUnlock": "Derrota a The Lamb como Jacob and Esau.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JACOB AND ESAU",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Rock Bottom",
+      "howToUnlock": "Completa el Boss Rush como Jacob and Esau.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JACOB AND ESAU",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Inner Child",
+      "howToUnlock": "Derrota a Ultra Greed como Jacob and Esau.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JACOB AND ESAU",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Vanishing Twin",
+      "howToUnlock": "Derrota a Hush como Jacob and Esau.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JACOB AND ESAU",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Genesis",
+      "howToUnlock": "Derrota a Ultra Greedier como Jacob and Esau.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JACOB AND ESAU",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Suplex!",
+      "howToUnlock": "Derrota a Delirium como Jacob and Esau.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JACOB AND ESAU",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Solomon's Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como Jacob and Esau.",
+      "version": "repentance",
+      "category": "co-op",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "JACOB AND ESAU",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Illusion Baby",
+      "howToUnlock": "Derrota a Mega Satan como Jacob and Esau.",
+      "version": "repentance",
+      "category": "co-op",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "JACOB AND ESAU",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Meat Cleaver",
+      "howToUnlock": "Derrota a Mother como Isaac.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "ISAAC",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Options?",
+      "howToUnlock": "Derrota a The Beast como Isaac.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "ISAAC",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Yuck Heart",
+      "howToUnlock": "Derrota a Mother como Magdalene.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "MAGDALENE",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Candy Heart",
+      "howToUnlock": "Derrota a The Beast como Magdalene.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "MAGDALENE",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Guppy's Eye",
+      "howToUnlock": "Derrota a Mother como Cain.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "CAIN",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "A Pound of Flesh",
+      "howToUnlock": "Derrota a The Beast como Cain.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "CAIN",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Akeldama",
+      "howToUnlock": "Derrota a Mother como Judas.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JUDAS",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Redemption",
+      "howToUnlock": "Derrota a The Beast como Judas.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JUDAS",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Eternal D6",
+      "howToUnlock": "Derrota a Mother como ??? (Blue Baby).",
+      "version": "repentance",
+      "category": "item",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "???",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Montezuma's Revenge",
+      "howToUnlock": "Derrota a The Beast como ??? (Blue Baby).",
+      "version": "repentance",
+      "category": "item",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "???",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Bird Cage",
+      "howToUnlock": "Derrota a Mother como Eve.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EVE",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Cracked Orb",
+      "howToUnlock": "Derrota a The Beast como Eve.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EVE",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Bloody Gust",
+      "howToUnlock": "Derrota a Mother como Samson.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "SAMSON",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Empty Heart",
+      "howToUnlock": "Derrota a The Beast como Samson.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "SAMSON",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Devil's Crown",
+      "howToUnlock": "Derrota a Mother como Azazel.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "AZAZEL",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Lil Abaddon",
+      "howToUnlock": "Derrota a The Beast como Azazel.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "AZAZEL",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Tinytoma",
+      "howToUnlock": "Derrota a Mother como Lazarus.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LAZARUS",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Astral Projection",
+      "howToUnlock": "Derrota a The Beast como Lazarus.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LAZARUS",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "'M",
+      "howToUnlock": "Derrota a Mother como Eden.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EDEN",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Everything Jar",
+      "howToUnlock": "Derrota a The Beast como Eden.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EDEN",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Lost Soul",
+      "howToUnlock": "Derrota a Mother como The Lost.",
+      "version": "repentance",
+      "category": "item",
+      "character": "The Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE LOST",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Hungry Soul",
+      "howToUnlock": "Derrota a The Beast como The Lost.",
+      "version": "repentance",
+      "category": "item",
+      "character": "The Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE LOST",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Blood Puppy",
+      "howToUnlock": "Derrota a Mother como Lilith.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LILITH",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "C Section",
+      "howToUnlock": "Derrota a The Beast como Lilith.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LILITH",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Keeper's Sack",
+      "howToUnlock": "Derrota a Mother como Keeper.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "KEEPER",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Keeper's Box",
+      "howToUnlock": "Derrota a The Beast como Keeper.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "KEEPER",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Lil Portal",
+      "howToUnlock": "Derrota a Mother como Apollyon.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "APOLLYON",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Worm Friend",
+      "howToUnlock": "Derrota a The Beast como Apollyon.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "APOLLYON",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Bone Spurs",
+      "howToUnlock": "Derrota a Mother como The Forgotten.",
+      "version": "repentance",
+      "category": "item",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE FORGOTTEN",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Spirit Shackles",
+      "howToUnlock": "Derrota a The Beast como The Forgotten.",
+      "version": "repentance",
+      "category": "item",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE FORGOTTEN",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Revelation",
+      "howToUnlock": "Derrota a Mother como Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BETHANY",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Jar of Wisps",
+      "howToUnlock": "Derrota a The Beast como Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BETHANY",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Magic Skin",
+      "howToUnlock": "Derrota a Mother como Jacob and Esau.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JACOB AND ESAU",
+        "BOSS",
+        "MOTHER"
+      ]
+    },
+    {
+      "displayName": "Friend Finder",
+      "howToUnlock": "Derrota a The Beast como Jacob and Esau.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JACOB AND ESAU",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "The Broken",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como Isaac. Desbloquea a Tainted Isaac como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Isaac",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED ISAAC",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Dauntless",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como Magdalene. Desbloquea a Tainted Magdalene como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Magdalene",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED MAGDALENE",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Hoarder",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como Cain. Desbloquea a Tainted Cain como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Cain",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED CAIN",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Deceiver",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como Judas. Desbloquea a Tainted Judas como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Judas",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED JUDAS",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Soiled",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como ???. Desbloquea a Tainted ??? como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted ???",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED ???",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Curdled",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como Eve. Desbloquea a Tainted Eve como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Eve",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED EVE",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Savage",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como Samson. Desbloquea a Tainted Samson como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Samson",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED SAMSON",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Benighted",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como Azazel. Desbloquea a Tainted Azazel como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Azazel",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED AZAZEL",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Enigma",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como Lazarus. Desbloquea a Tainted Lazarus como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Lazarus",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED LAZARUS",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Capricious",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como Eden. Desbloquea a Tainted Eden como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Eden",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED EDEN",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Baleful",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como The Lost. Desbloquea a Tainted Lost como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Lost",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED LOST",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Harlot",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como Lilith. Desbloquea a Tainted Lilith como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Lilith",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED LILITH",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Miser",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como Keeper. Desbloquea a Tainted Keeper como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Keeper",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED KEEPER",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Empty",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como Apollyon. Desbloquea a Tainted Apollyon como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Apollyon",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED APOLLYON",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Fettered",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como The Forgotten. Desbloquea a Tainted Forgotten como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Forgotten",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED FORGOTTEN",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Zealot",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como Bethany. Desbloquea a Tainted Bethany como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Bethany",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED BETHANY",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "The Deserter",
+      "howToUnlock": "Usa Red Key (u otro método para abrir habitaciones especiales) para abrir el armario escondido en Home como Jacob and Esau. Desbloquea a Tainted Jacob como personaje.",
+      "version": "repentance",
+      "category": "character",
+      "character": "Tainted Jacob",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "TAINTED",
+        "TAINTED JACOB",
+        "HOME"
+      ]
+    },
+    {
+      "displayName": "Glitched Crown",
+      "howToUnlock": "Derrota a The Beast como Tainted Isaac.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED ISAAC",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Belly Jelly",
+      "howToUnlock": "Derrota a The Beast como Tainted Magdalene.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED MAGDALENE",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Blue Key",
+      "howToUnlock": "Derrota a The Beast como Tainted Cain.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED CAIN",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Sanguine Bond",
+      "howToUnlock": "Derrota a The Beast como Tainted Judas.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED JUDAS",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "The Swarm",
+      "howToUnlock": "Derrota a The Beast como Tainted ???.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted ???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED ???",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Heartbreak",
+      "howToUnlock": "Derrota a The Beast como Tainted Eve.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED EVE",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Larynx",
+      "howToUnlock": "Derrota a The Beast como Tainted Samson.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED SAMSON",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Azazel's Rage",
+      "howToUnlock": "Derrota a The Beast como Tainted Azazel.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED AZAZEL",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Salvation",
+      "howToUnlock": "Derrota a The Beast como Tainted Lazarus.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LAZARUS",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "TMTRAINER",
+      "howToUnlock": "Derrota a The Beast como Tainted Eden.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED EDEN",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Sacred Orb",
+      "howToUnlock": "Derrota a The Beast como Tainted Lost.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LOST",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Twisted Pair",
+      "howToUnlock": "Derrota a The Beast como Tainted Lilith.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LILITH",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Strawman",
+      "howToUnlock": "Derrota a The Beast como Tainted Keeper.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED KEEPER",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Echo Chamber",
+      "howToUnlock": "Derrota a The Beast como Tainted Apollyon.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED APOLLYON",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Isaac's Tomb",
+      "howToUnlock": "Derrota a The Beast como Tainted Forgotten.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED FORGOTTEN",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Vengeful Spirit",
+      "howToUnlock": "Derrota a The Beast como Tainted Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED BETHANY",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Esau Jr.",
+      "howToUnlock": "Derrota a The Beast como Tainted Jacob.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Jacob",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED JACOB",
+        "BOSS",
+        "THE BEAST",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Bloody Mary",
+      "howToUnlock": "Desbloquea a Bethany, consigue Blood Bag y desbloquea It Lives! para desbloquear el desafío Bloody Mary (#37).",
+      "version": "repentance",
+      "category": "challenge",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BETHANY",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Baptism by Fire",
+      "howToUnlock": "Derrota a Satan como Bethany, derrota a Mom's Heart 11 veces y desbloquea Maggy's Faith para desbloquear el desafío Baptism by Fire (#38).",
+      "version": "repentance",
+      "category": "challenge",
+      "character": "Bethany",
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BETHANY",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Isaac's Awakening",
+      "howToUnlock": "Derrota a Mother para desbloquear el desafío Isaac's Awakening (#39).",
+      "version": "repentance",
+      "category": "challenge",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "JACOB AND ESAU",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Seeing Double",
+      "howToUnlock": "Derrota a Mother para desbloquear el desafío Seeing Double (#40).",
+      "version": "repentance",
+      "category": "challenge",
+      "character": "Jacob and Esau",
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "JACOB AND ESAU",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Pica Run",
+      "howToUnlock": "Derrota a Mom's Heart 11 veces y desbloquea Marbles para desbloquear el desafío Pica Run (#41).",
+      "version": "repentance",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Hot Potato",
+      "howToUnlock": "Desbloquea a Tainted Forgotten para desbloquear el desafío Hot Potato (#42).",
+      "version": "repentance",
+      "category": "challenge",
+      "character": "Tainted Forgotten",
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "TAINTED FORGOTTEN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Cantripped!",
+      "howToUnlock": "Desbloquea a Tainted Cain para desbloquear el desafío Cantripped! (#43).",
+      "version": "repentance",
+      "category": "challenge",
+      "character": "Tainted Cain",
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "TAINTED CAIN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Red Redemption",
+      "howToUnlock": "Desbloquea a Tainted Jacob para desbloquear el desafío Red Redemption (#44).",
+      "version": "repentance",
+      "category": "challenge",
+      "character": "Tainted Jacob",
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "TAINTED JACOB",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "DELETE THIS",
+      "howToUnlock": "Desbloquea a Tainted Eden para desbloquear el desafío DELETE THIS (#45). ⚠ Nota: el nombre y descripción son un error dejado intencionalmente por los desarrolladores.",
+      "version": "repentance",
+      "category": "challenge",
+      "character": "Tainted Eden",
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "TAINTED EDEN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Dirty Mind",
+      "howToUnlock": "Completa el desafío Scat Man (Desafío #36).",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Sigil of Baphomet",
+      "howToUnlock": "Completa el desafío Bloody Mary (Desafío #37).",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Purgatory",
+      "howToUnlock": "Completa el desafío Baptism by Fire (Desafío #38).",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Spirit Sword",
+      "howToUnlock": "Completa el desafío Isaac's Awakening (Desafío #39).",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Broken Glasses",
+      "howToUnlock": "Completa el desafío Seeing Double (Desafío #40).",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Ice Cube",
+      "howToUnlock": "Completa el desafío Pica Run (Desafío #41).",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Charged Penny",
+      "howToUnlock": "Dona a Battery Bums hasta que te paguen con un objeto 5 veces en total.",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "The Fool",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Lost.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LOST",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "The Magician",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Judas.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED JUDAS",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "The High Priestess",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Lilith.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LILITH",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "The Empress",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Eve.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED EVE",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "The Emperor",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted ???.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted ???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED ???",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "The Hierophant",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED BETHANY",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "The Lovers",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Magdalene.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED MAGDALENE",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "The Chariot",
+      "howToUnlock": "Completa el desafío Hot Potato (Desafío #42).",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Justice",
+      "howToUnlock": "Completa el desafío Cantripped (Desafío #43).",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "The Hermit",
+      "howToUnlock": "Completa el desafío Red Redemption (Desafío #44).",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Wheel of Fortune",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Cain.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED CAIN",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Strength",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Samson.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED SAMSON",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "The Hanged Man",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Keeper.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED KEEPER",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Death",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Forgotten.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED FORGOTTEN",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Temperance",
+      "howToUnlock": "Completa el desafío DELETE THIS (Desafío #45). ⚠ Descripción 'INVALID_DESCRIPTION' es un error dejado por los desarrolladores.",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "The Devil",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Azazel.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED AZAZEL",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "The Tower",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Apollyon.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED APOLLYON",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "The Stars",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Isaac.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED ISAAC",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "The Sun and the Moon",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Jacob.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Jacob",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED JACOB",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Judgement",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Lazarus.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LAZARUS",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "The World",
+      "howToUnlock": "Derrota a Ultra Greedier como Tainted Eden.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED EDEN",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Old Capacitor",
+      "howToUnlock": "Mata a 10 Battery Bums en total.",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Brimstone Bombs",
+      "howToUnlock": "Destruye el carrito de Hornfel y mátalo antes de que escape.",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Mega Mush",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil con todos los personajes no-Tainted.",
+      "version": "repentance",
+      "category": "collection",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "COLECCIÓN",
+        "100%",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Mom's Lock",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Isaac.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED ISAAC",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Dice Bag",
+      "howToUnlock": "Derrota a Mother como Tainted Isaac.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED ISAAC",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Holy Crown",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Magdalene.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED MAGDALENE",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Mother's Kiss",
+      "howToUnlock": "Derrota a Mother como Tainted Magdalene.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED MAGDALENE",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Gilded Key",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Cain.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED CAIN",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Lucky Sack",
+      "howToUnlock": "Derrota a Mother como Tainted Cain.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED CAIN",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Your Soul",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Judas.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED JUDAS",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Number Magnet",
+      "howToUnlock": "Derrota a Mother como Tainted Judas.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED JUDAS",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Dingle Berry",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted ???.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted ???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED ???",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Ring Cap",
+      "howToUnlock": "Derrota a Mother como Tainted ???.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted ???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED ???",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Strange Key",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Eve.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED EVE",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Lil Clot",
+      "howToUnlock": "Derrota a Mother como Tainted Eve.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED EVE",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Temporary Tattoo",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Samson.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED SAMSON",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Swallowed M80",
+      "howToUnlock": "Derrota a Mother como Tainted Samson.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED SAMSON",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Wicked Crown",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Azazel.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED AZAZEL",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Azazel's Stump",
+      "howToUnlock": "Derrota a Mother como Tainted Azazel.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED AZAZEL",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Torn Pocket",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Lazarus.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LAZARUS",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Torn Card",
+      "howToUnlock": "Derrota a Mother como Tainted Lazarus.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LAZARUS",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Nuh Uh!",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Eden.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED EDEN",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Modeling Clay",
+      "howToUnlock": "Derrota a Mother como Tainted Eden.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED EDEN",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Kid's Drawing",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Lost.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LOST",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Crystal Key",
+      "howToUnlock": "Derrota a Mother como Tainted Lost.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LOST",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "The Twins",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Lilith.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LILITH",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Adoption Papers",
+      "howToUnlock": "Derrota a Mother como Tainted Lilith.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LILITH",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Keeper's Bargain",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Keeper.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED KEEPER",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Cursed Penny",
+      "howToUnlock": "Derrota a Mother como Tainted Keeper.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED KEEPER",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Cricket Leg",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Apollyon.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED APOLLYON",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Apollyon's Best Friend",
+      "howToUnlock": "Derrota a Mother como Tainted Apollyon.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED APOLLYON",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Polished Bone",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Forgotten.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED FORGOTTEN",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Hollow Heart",
+      "howToUnlock": "Derrota a Mother como Tainted Forgotten.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED FORGOTTEN",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Expansion Pack",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED BETHANY",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Beth's Essence",
+      "howToUnlock": "Derrota a Mother como Tainted Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED BETHANY",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "RC Remote",
+      "howToUnlock": "Derrota a Isaac, ???, Satan y The Lamb como Tainted Jacob.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Jacob",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED JACOB",
+        "BOSS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Found Soul",
+      "howToUnlock": "Derrota a Mother como Tainted Jacob.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Jacob",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED JACOB",
+        "BOSS",
+        "MOTHER",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Member Card",
+      "howToUnlock": "Gasta 40 o más monedas en una misma tienda (Shop) en una partida.",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Golden Razor",
+      "howToUnlock": "En una misma partida, acumula 99 monedas y luego gástalas todas.",
+      "version": "repentance",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Spindown Dice",
+      "howToUnlock": "Derrota a Delirium como Tainted Isaac.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED ISAAC",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Hypercoagulation",
+      "howToUnlock": "Derrota a Delirium como Tainted Magdalene.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED MAGDALENE",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Bag of Crafting",
+      "howToUnlock": "Derrota a Delirium como Tainted Cain.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED CAIN",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Dark Arts",
+      "howToUnlock": "Derrota a Delirium como Tainted Judas.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED JUDAS",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "IBS",
+      "howToUnlock": "Derrota a Delirium como Tainted ???.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted ???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED ???",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Sumptorium",
+      "howToUnlock": "Derrota a Delirium como Tainted Eve.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED EVE",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Berserk!",
+      "howToUnlock": "Derrota a Delirium como Tainted Samson.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED SAMSON",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Hemoptysis",
+      "howToUnlock": "Derrota a Delirium como Tainted Azazel.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED AZAZEL",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Flip",
+      "howToUnlock": "Derrota a Delirium como Tainted Lazarus.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LAZARUS",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Corrupted Data",
+      "howToUnlock": "Derrota a Delirium como Tainted Eden.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED EDEN",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Ghost Bombs",
+      "howToUnlock": "Derrota a Delirium como Tainted Lost.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LOST",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Gello",
+      "howToUnlock": "Derrota a Delirium como Tainted Lilith.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LILITH",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Keeper's Kin",
+      "howToUnlock": "Derrota a Delirium como Tainted Keeper.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED KEEPER",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Abyss",
+      "howToUnlock": "Derrota a Delirium como Tainted Apollyon.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED APOLLYON",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Decap Attack",
+      "howToUnlock": "Derrota a Delirium como Tainted Forgotten.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED FORGOTTEN",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Lemegeton",
+      "howToUnlock": "Derrota a Delirium como Tainted Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED BETHANY",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Anima Sola",
+      "howToUnlock": "Derrota a Delirium como Tainted Jacob.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Jacob",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED JACOB",
+        "BOSS",
+        "DELIRIUM",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Mega Chest",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Isaac.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED ISAAC",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Queen of Hearts",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Magdalene.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED MAGDALENE",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Gold Pill",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Cain.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED CAIN",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Black Sack",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Judas.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED JUDAS",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Charming Poop",
+      "howToUnlock": "Derrota a Mega Satan como Tainted ???.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted ???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED ???",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Horse Pill",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Eve.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED EVE",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Crane Game",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Samson.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED SAMSON",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Hell Game",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Azazel.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED AZAZEL",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Wooden Chest",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Lazarus.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LAZARUS",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Wild Card",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Eden.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED EDEN",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Haunted Chest",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Lost.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LOST",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Fool's Gold",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Lilith.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LILITH",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Golden Penny",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Keeper.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED KEEPER",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Rotten Beggar",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Apollyon.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED APOLLYON",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Golden Battery",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Forgotten.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED FORGOTTEN",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Confessional",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED BETHANY",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Golden Trinket",
+      "howToUnlock": "Derrota a Mega Satan como Tainted Jacob.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Jacob",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED JACOB",
+        "BOSS",
+        "MEGA SATAN",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of Isaac",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Isaac.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED ISAAC",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of Magdalene",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Magdalene.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED MAGDALENE",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of Cain",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Cain.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED CAIN",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of Judas",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Judas.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED JUDAS",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of ???",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted ???.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted ???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED ???",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of Eve",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Eve.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED EVE",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of Samson",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Samson.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED SAMSON",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of Azazel",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Azazel.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED AZAZEL",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of Lazarus",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Lazarus.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LAZARUS",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of Eden",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Eden.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED EDEN",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of the Lost",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Lost.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LOST",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of Lilith",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Lilith.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED LILITH",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of the Keeper",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Keeper.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED KEEPER",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of Apollyon",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Apollyon.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED APOLLYON",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of the Forgotten",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Forgotten.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED FORGOTTEN",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of Bethany",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Bethany.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Bethany",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED BETHANY",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Soul of Jacob and Esau",
+      "howToUnlock": "Derrota a Hush y completa el Boss Rush como Tainted Jacob.",
+      "version": "repentance",
+      "category": "item",
+      "character": "Tainted Jacob",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TAINTED JACOB",
+        "BOSS",
+        "HUSH",
+        "BOSS RUSH",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "A Strange Door",
+      "howToUnlock": "Derrota a Mother para desbloquear una puerta especial en Home que lleva al encuentro final con The Beast.",
+      "version": "repentance",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS",
+        "THE BEAST"
+      ]
+    },
+    {
+      "displayName": "Death Certificate",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil con todos los personajes, incluyendo los Tainted.",
+      "version": "repentance",
+      "category": "collection",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "COLECCIÓN",
+        "100%",
+        "HARD MODE",
+        "COMPLETION MARKS",
+        "TAINTED"
+      ]
+    },
+    {
+      "displayName": "Dead God",
+      "howToUnlock": "Desbloquea todos los logros del juego y recoge absolutamente todos los objetos. El logro definitivo.",
+      "version": "repentance",
+      "category": "collection",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "COLECCIÓN",
+        "100%"
+      ]
+    },
+    {
+      "displayName": "Play Online",
+      "howToUnlock": "Juega una partida en modo multijugador online.",
+      "version": "repentance_plus",
+      "category": "online",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ONLINE",
+        "MULTIJUGADOR"
+      ]
+    },
+    {
+      "displayName": "Win Online",
+      "howToUnlock": "Gana una partida en modo multijugador online.",
+      "version": "repentance_plus",
+      "category": "online",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ONLINE",
+        "MULTIJUGADOR"
+      ]
+    },
+    {
+      "displayName": "Win Online Daily",
+      "howToUnlock": "Gana una partida de Daily Run en modo online.",
+      "version": "repentance_plus",
+      "category": "online",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ONLINE",
+        "MULTIJUGADOR",
+        "DAILY CHALLENGE"
       ]
     }
   ]
