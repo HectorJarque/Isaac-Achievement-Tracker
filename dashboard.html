@@ -43,15 +43,16 @@
 
   <!-- Filtros y búsqueda -->
   <div class="filters-bar">
+
     <!-- Filtro por versión -->
     <div class="filter-group">
       <span class="filter-label">VERSIÓN:</span>
       <div class="filter-pills" id="versionFilters">
         <button class="pill active" data-filter="version" data-value="all">TODAS</button>
-        <button class="pill v-rebirth" data-filter="version" data-value="rebirth">REBIRTH</button>
-        <button class="pill v-afterbirth" data-filter="version" data-value="afterbirth">AFTERBIRTH</button>
+        <button class="pill v-rebirth"         data-filter="version" data-value="rebirth">REBIRTH</button>
+        <button class="pill v-afterbirth"      data-filter="version" data-value="afterbirth">AFTERBIRTH</button>
         <button class="pill v-afterbirth-plus" data-filter="version" data-value="afterbirth_plus">AFTERBIRTH+</button>
-        <button class="pill v-repentance" data-filter="version" data-value="repentance">REPENTANCE</button>
+        <button class="pill v-repentance"      data-filter="version" data-value="repentance">REPENTANCE</button>
         <button class="pill v-repentance-plus" data-filter="version" data-value="repentance_plus">REPENTANCE+</button>
       </div>
     </div>
@@ -60,9 +61,9 @@
     <div class="filter-group">
       <span class="filter-label">ESTADO:</span>
       <div class="filter-pills">
-        <button class="pill active" data-filter="status" data-value="all">TODOS</button>
+        <button class="pill active"          data-filter="status" data-value="all">TODOS</button>
         <button class="pill status-unlocked" data-filter="status" data-value="unlocked">DESBLOQUEADOS</button>
-        <button class="pill status-locked" data-filter="status" data-value="locked">PENDIENTES</button>
+        <button class="pill status-locked"   data-filter="status" data-value="locked">PENDIENTES</button>
       </div>
     </div>
 
@@ -70,19 +71,25 @@
     <div class="filter-group">
       <span class="filter-label">CATEGORÍA:</span>
       <div class="filter-pills">
-        <button class="pill active" data-filter="category" data-value="all">TODAS</button>
-        <button class="pill" data-filter="category" data-value="character">PERSONAJE</button>
-        <button class="pill" data-filter="category" data-value="challenge">DESAFÍO</button>
-        <button class="pill" data-filter="category" data-value="general">GENERAL</button>
-        <button class="pill" data-filter="category" data-value="item">OBJETO</button>
+        <button class="pill active"      data-filter="category" data-value="all">TODAS</button>
+        <button class="pill cat-character"  data-filter="category" data-value="character">PERSONAJE</button>
+        <button class="pill cat-item"       data-filter="category" data-value="item">OBJETO</button>
+        <button class="pill cat-challenge"  data-filter="category" data-value="challenge">DESAFÍO</button>
+        <button class="pill cat-boss"       data-filter="category" data-value="boss">BOSS</button>
+        <button class="pill cat-area"       data-filter="category" data-value="area">ÁREA</button>
+        <button class="pill cat-coop"       data-filter="category" data-value="co-op">CO-OP</button>
+        <button class="pill cat-donation"   data-filter="category" data-value="donation">DONACIÓN</button>
+        <button class="pill cat-progression" data-filter="category" data-value="progression">PROGRESIÓN</button>
+        <button class="pill cat-collection" data-filter="category" data-value="collection">COLECCIÓN</button>
       </div>
     </div>
 
     <!-- Búsqueda -->
     <div class="filter-group">
       <span class="filter-label">BUSCAR:</span>
-      <input type="text" id="searchInput" class="search-input pixel-input" placeholder="Escribe un nombre...">
+      <input type="text" id="searchInput" class="search-input pixel-input" placeholder="Nombre, tag, personaje...">
     </div>
+
   </div>
 
   <!-- Pantalla de carga -->
@@ -126,9 +133,10 @@
           <h3 class="modal-section-title">CÓMO DESBLOQUEAR</h3>
           <p class="vt323 modal-how" id="modalHow"></p>
         </div>
-        <div class="modal-meta">
-          <span class="meta-tag" id="modalCategory"></span>
-          <span class="meta-tag" id="modalCharacter" style="display:none;"></span>
+        <!-- Tags del logro (renderizados por app.js vía buildModalTagsHTML) -->
+        <div class="modal-meta" id="modalMeta"></div>
+        <!-- Fecha de desbloqueo -->
+        <div class="modal-date-wrap">
           <span class="meta-tag modal-unlock-date" id="modalDate" style="display:none;"></span>
         </div>
       </div>

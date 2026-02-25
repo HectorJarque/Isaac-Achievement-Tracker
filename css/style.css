@@ -1,37 +1,45 @@
 /* ── VARIABLES DE COLOR ── */
 :root {
-  --bg-deep:      #070507;
-  --bg-card:      #120d10;
-  --bg-card-2:    #1a1118;
-  --border:       #3a1f2e;
-  --border-glow:  #6b1f3e;
-  --red-dark:     #6b0f1a;
-  --red-mid:      #a01428;
-  --red-bright:   #d42040;
-  --gold:         #c8a428;
-  --gold-light:   #e8c84a;
-  --text-main:    #e8d5a3;
-  --text-dim:     #8a6f5a;
-  --text-hint:    #4a3a30;
-  --unlocked:     #a8c840;
-  --locked:       #3a3035;
-  --version-rebirth:        #4a7fbf;
-  --version-afterbirth:     #bf7a4a;
-  --version-afterbirth-plus:#4abf8a;
-  --version-repentance:     #9a4abf;
-  --version-repentance-plus:#bf4a6a;
-  --glow-red:     0 0 8px #a01428, 0 0 20px #6b0f1a;
-  --glow-gold:    0 0 8px #c8a428, 0 0 20px #8a6a10;
-  --pixel-border: 2px solid;
+  /* Fondos más claros que antes para mayor legibilidad */
+  --bg-deep:      #0e090c;
+  --bg-card:      #1c1118;
+  --bg-card-2:    #271820;
+  --border:       #4a2840;
+  --border-glow:  #8c2a52;
+
+  /* Rojos más vivos */
+  --red-dark:     #7a1020;
+  --red-mid:      #c01830;
+  --red-bright:   #f02848;
+
+  /* Dorado más saturado */
+  --gold:         #e0b430;
+  --gold-light:   #ffda60;
+
+  /* Texto mucho más legible */
+  --text-main:    #f5e8c0;
+  --text-dim:     #b89878;
+  --text-hint:    #6a5040;
+
+  /* Estados */
+  --unlocked:     #90e040;
+  --locked:       #2e2430;
+
+  /* Versiones — más saturadas */
+  --version-rebirth:         #5a9edf;
+  --version-afterbirth:      #e07a30;
+  --version-afterbirth-plus: #30e090;
+  --version-repentance:      #c050f0;
+  --version-repentance-plus: #f04878;
+
+  /* Glows */
+  --glow-red:   0 0 10px #c01830, 0 0 24px rgba(192,24,48,0.5);
+  --glow-gold:  0 0 10px #e0b430, 0 0 24px rgba(224,180,48,0.4);
+  --glow-green: 0 0 8px #90e040, 0 0 18px rgba(144,224,64,0.3);
 }
 
 /* ── RESET Y BASE ── */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; scroll-behavior: smooth; }
 
 body {
@@ -42,22 +50,18 @@ body {
   line-height: 1.8;
   min-height: 100vh;
   overflow-x: hidden;
-  /* Textura de ruido sutil */
-  background-image: 
-    radial-gradient(ellipse at 20% 50%, rgba(107, 31, 62, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 20%, rgba(60, 15, 30, 0.12) 0%, transparent 60%);
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(140, 42, 82, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(80, 20, 50, 0.15) 0%, transparent 60%);
 }
 
-/* Clase auxiliar para usar la fuente grande legible en textos largos */
 .vt323 {
   font-family: 'VT323', monospace;
   font-size: 1.2rem;
   line-height: 1.4;
 }
 
-/* ── EFECTOS DE FONDO ── */
-
-/* Scanlines - líneas horizontales que simulan una pantalla de tubo CRT antigua */
+/* ── SCANLINES ── */
 .scanlines {
   position: fixed;
   inset: 0;
@@ -65,14 +69,14 @@ body {
     to bottom,
     transparent 0px,
     transparent 2px,
-    rgba(0,0,0,0.15) 2px,
-    rgba(0,0,0,0.15) 4px
+    rgba(0,0,0,0.1) 2px,
+    rgba(0,0,0,0.1) 4px
   );
   pointer-events: none;
   z-index: 1000;
 }
 
-/* Lágrimas de fondo en la landing page */
+/* ── FONDO LÁGRIMAS (landing) ── */
 .bg-tears {
   position: fixed;
   inset: 0;
@@ -97,9 +101,7 @@ body {
   100% { transform: translateY(100vh); opacity: 0; }
 }
 
-/* ── COMPONENTES PIXEL ART ── */
-
-/* Borde estilo pixel art (usando box-shadow escalonado) */
+/* ── PIXEL COMPONENTS ── */
 .pixel-border {
   box-shadow:
     0 -2px 0 var(--border),
@@ -108,7 +110,6 @@ body {
      2px 0 0 var(--border);
 }
 
-/* Botón estilo pixel art principal */
 .pixel-btn {
   display: inline-block;
   padding: 0.8rem 1.5rem;
@@ -121,13 +122,12 @@ body {
   font-size: 0.55rem;
   transition: all 0.1s;
   position: relative;
-  image-rendering: pixelated;
-  /* Sombra pixelada hacia abajo-derecha */
   box-shadow: 4px 4px 0 #000, inset 0 1px 0 rgba(255,255,255,0.1);
 }
 
 .pixel-btn:hover {
   background: var(--red-mid);
+  color: #fff;
   transform: translate(-2px, -2px);
   box-shadow: 6px 6px 0 #000, var(--glow-red);
 }
@@ -137,11 +137,10 @@ body {
   box-shadow: 2px 2px 0 #000;
 }
 
-/* Botón pequeño */
 .pixel-btn-sm {
   display: inline-block;
   padding: 0.4rem 0.8rem;
-  background: #1a0d12;
+  background: #231520;
   color: var(--text-dim);
   border: 1px solid var(--border);
   text-decoration: none;
@@ -158,7 +157,6 @@ body {
   border-color: var(--border-glow);
 }
 
-/* Divisor decorativo pixelado */
 .pixel-divider {
   height: 2px;
   background: linear-gradient(to right, transparent, var(--border-glow), var(--gold), var(--border-glow), transparent);
@@ -188,15 +186,13 @@ body {
   padding: 2.5rem 2rem;
   box-shadow:
     0 0 0 1px #000,
-    0 0 30px rgba(107, 31, 62, 0.3),
-    inset 0 0 40px rgba(0,0,0,0.5);
+    0 0 40px rgba(140, 42, 82, 0.35),
+    inset 0 0 40px rgba(0,0,0,0.4);
   position: relative;
   text-align: center;
 }
 
-/* Esquinas decorativas estilo pixel */
-.landing-card::before,
-.landing-card::after {
+.landing-card::before, .landing-card::after {
   content: '';
   position: absolute;
   width: 16px;
@@ -204,14 +200,8 @@ body {
   border-color: var(--gold);
   border-style: solid;
 }
-.landing-card::before {
-  top: 8px; left: 8px;
-  border-width: 2px 0 0 2px;
-}
-.landing-card::after {
-  bottom: 8px; right: 8px;
-  border-width: 0 2px 2px 0;
-}
+.landing-card::before { top: 8px; left: 8px; border-width: 2px 0 0 2px; }
+.landing-card::after  { bottom: 8px; right: 8px; border-width: 0 2px 2px 0; }
 
 .logo-area { margin-bottom: 1rem; }
 
@@ -219,7 +209,7 @@ body {
   font-size: 3rem;
   display: block;
   animation: logoFloat 3s ease-in-out infinite;
-  filter: drop-shadow(0 0 10px rgba(200, 164, 40, 0.5));
+  filter: drop-shadow(0 0 12px rgba(224,180,48,0.6));
 }
 
 @keyframes logoFloat {
@@ -245,7 +235,6 @@ body {
 .landing-description { margin: 1rem 0 1.5rem; }
 .landing-description .vt323 { color: var(--text-dim); }
 
-/* Etiquetas de versión */
 .versions-list {
   display: flex;
   flex-wrap: wrap;
@@ -261,11 +250,12 @@ body {
   border: 1px solid;
 }
 
-.v-rebirth        { color: var(--version-rebirth);        border-color: var(--version-rebirth);        background: rgba(74,127,191,0.1); }
-.v-afterbirth     { color: var(--version-afterbirth);     border-color: var(--version-afterbirth);     background: rgba(191,122,74,0.1); }
-.v-afterbirth-plus{ color: var(--version-afterbirth-plus);border-color: var(--version-afterbirth-plus);background: rgba(74,191,138,0.1); }
-.v-repentance     { color: var(--version-repentance);     border-color: var(--version-repentance);     background: rgba(154,74,191,0.1); }
-.v-repentance-plus{ color: var(--version-repentance-plus);border-color: var(--version-repentance-plus);background: rgba(191,74,106,0.1); }
+/* Versión pills — con colores más saturados */
+.v-rebirth         { color: var(--version-rebirth);         border-color: var(--version-rebirth);         background: rgba(90,158,223,0.15); }
+.v-afterbirth      { color: var(--version-afterbirth);      border-color: var(--version-afterbirth);      background: rgba(224,122,48,0.15); }
+.v-afterbirth-plus { color: var(--version-afterbirth-plus); border-color: var(--version-afterbirth-plus); background: rgba(48,224,144,0.15); }
+.v-repentance      { color: var(--version-repentance);      border-color: var(--version-repentance);      background: rgba(192,80,240,0.15); }
+.v-repentance-plus { color: var(--version-repentance-plus); border-color: var(--version-repentance-plus); background: rgba(240,72,120,0.15); }
 
 .login-area { margin: 1.5rem 0; }
 
@@ -280,7 +270,7 @@ body {
 
 .btn-steam:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 #000, 0 0 20px rgba(74, 127, 191, 0.4);
+  box-shadow: 6px 6px 0 #000, 0 0 24px rgba(90, 158, 223, 0.5);
 }
 
 .steam-btn-img { display: block; height: 48px; }
@@ -292,16 +282,15 @@ body {
 }
 
 .error-msg {
-  background: rgba(164, 20, 40, 0.2);
+  background: rgba(192,24,48,0.2);
   border: 1px solid var(--red-mid);
-  color: #ff6080;
+  color: #ff8090;
   padding: 0.8rem;
   margin: 1rem 0;
   font-family: 'VT323', monospace;
   font-size: 1.1rem;
 }
 
-/* Stats decorativos en la landing */
 .stat-boxes {
   display: flex;
   gap: 0;
@@ -321,7 +310,7 @@ body {
 .stat-num {
   display: block;
   font-size: 1rem;
-  color: var(--gold);
+  color: var(--gold-light);
 }
 
 .stat-label {
@@ -332,9 +321,7 @@ body {
   margin-top: 0.3rem;
 }
 
-/* ── DASHBOARD ── */
-
-/* Header del dashboard */
+/* ── DASHBOARD HEADER ── */
 .dashboard-header {
   position: sticky;
   top: 0;
@@ -343,9 +330,10 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 0.8rem 1.5rem;
-  background: rgba(7, 5, 7, 0.95);
+  background: rgba(10, 6, 9, 0.96);
   border-bottom: 2px solid var(--border);
   backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.6);
 }
 
 .header-logo {
@@ -353,9 +341,10 @@ body {
   align-items: center;
   gap: 0.6rem;
   text-decoration: none;
-  color: var(--gold);
+  color: var(--gold-light);
   font-size: 0.65rem;
   flex-shrink: 0;
+  text-shadow: var(--glow-gold);
 }
 
 .header-logo-icon { font-size: 1.4rem; }
@@ -370,8 +359,8 @@ body {
 .user-avatar, .user-avatar-placeholder {
   width: 32px;
   height: 32px;
-  border: 1px solid var(--border);
-  border-radius: 0; /* Sin redondeo para look pixel */
+  border: 1px solid var(--border-glow);
+  border-radius: 0;
   image-rendering: pixelated;
 }
 
@@ -385,11 +374,11 @@ body {
 }
 
 .user-name {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--text-main);
 }
 
-/* Barra de progreso global */
+/* ── BARRA DE PROGRESO GLOBAL ── */
 .global-progress-bar {
   padding: 0.8rem 1.5rem;
   background: var(--bg-card);
@@ -402,10 +391,13 @@ body {
   margin-bottom: 0.4rem;
 }
 
-.progress-info .vt323 { font-size: 1.1rem; color: var(--text-dim); }
+.progress-info .vt323 {
+  font-size: 1.2rem;
+  color: var(--text-main);
+}
 
 .progress-track {
-  height: 8px;
+  height: 10px;
   background: var(--locked);
   border: 1px solid var(--border);
   position: relative;
@@ -414,19 +406,18 @@ body {
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(to right, var(--red-dark), var(--gold));
+  background: linear-gradient(to right, var(--red-mid), var(--gold), var(--gold-light));
   transition: width 1s ease;
   position: relative;
 }
 
-/* Efecto de brillo que se mueve en la barra de progreso */
 .progress-fill::after {
   content: '';
   position: absolute;
   top: 0; right: 0;
-  width: 20px;
+  width: 30px;
   height: 100%;
-  background: linear-gradient(to right, transparent, rgba(255,255,255,0.4), transparent);
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.5), transparent);
   animation: progressShine 2s ease-in-out infinite;
 }
 
@@ -435,11 +426,11 @@ body {
   50% { opacity: 1; }
 }
 
-/* Barra de filtros */
+/* ── FILTROS ── */
 .filters-bar {
   padding: 1rem 1.5rem;
-  background: var(--bg-deep);
-  border-bottom: 1px solid var(--border);
+  background: var(--bg-card);
+  border-bottom: 2px solid var(--border);
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
@@ -455,13 +446,14 @@ body {
 
 .filter-label {
   font-size: 0.45rem;
-  color: var(--text-hint);
+  color: var(--text-dim);
   flex-shrink: 0;
+  letter-spacing: 0.05em;
 }
 
 .filter-pills { display: flex; flex-wrap: wrap; gap: 0.3rem; }
 
-/* Pastillas de filtro */
+/* Pastilla base */
 .pill {
   padding: 0.35rem 0.6rem;
   border: 1px solid var(--border);
@@ -470,50 +462,65 @@ body {
   font-family: 'Press Start 2P', monospace;
   font-size: 0.4rem;
   cursor: pointer;
-  transition: all 0.1s;
+  transition: all 0.12s;
 }
 
 .pill:hover {
   border-color: var(--border-glow);
   color: var(--text-main);
+  background: rgba(140,42,82,0.12);
 }
 
+/* Activo genérico */
 .pill.active {
   background: var(--red-dark);
-  border-color: var(--red-mid);
-  color: var(--text-main);
-  box-shadow: 2px 2px 0 #000;
+  border-color: var(--red-bright);
+  color: #fff;
+  box-shadow: 2px 2px 0 #000, 0 0 6px rgba(192,24,48,0.4);
 }
 
-/* Pastillas con colores de versión cuando están activas */
-.pill.v-rebirth.active         { background: rgba(74,127,191,0.25);  border-color: var(--version-rebirth);        color: var(--version-rebirth); }
-.pill.v-afterbirth.active      { background: rgba(191,122,74,0.25);  border-color: var(--version-afterbirth);     color: var(--version-afterbirth); }
-.pill.v-afterbirth-plus.active { background: rgba(74,191,138,0.25);  border-color: var(--version-afterbirth-plus);color: var(--version-afterbirth-plus); }
-.pill.v-repentance.active      { background: rgba(154,74,191,0.25);  border-color: var(--version-repentance);     color: var(--version-repentance); }
-.pill.v-repentance-plus.active { background: rgba(191,74,106,0.25);  border-color: var(--version-repentance-plus);color: var(--version-repentance-plus); }
-.pill.status-unlocked.active   { background: rgba(168,200,64,0.2);   border-color: var(--unlocked);               color: var(--unlocked); }
-.pill.status-locked.active     { background: rgba(58,48,53,0.5);     border-color: #6a5a60;                       color: #9a8a90; }
+/* Versiones activas */
+.pill.v-rebirth.active         { background: rgba(90,158,223,0.25);  border-color: var(--version-rebirth);         color: var(--version-rebirth);         box-shadow: 2px 2px 0 #000; }
+.pill.v-afterbirth.active      { background: rgba(224,122,48,0.25);  border-color: var(--version-afterbirth);      color: var(--version-afterbirth);      box-shadow: 2px 2px 0 #000; }
+.pill.v-afterbirth-plus.active { background: rgba(48,224,144,0.25);  border-color: var(--version-afterbirth-plus); color: var(--version-afterbirth-plus); box-shadow: 2px 2px 0 #000; }
+.pill.v-repentance.active      { background: rgba(192,80,240,0.25);  border-color: var(--version-repentance);      color: var(--version-repentance);      box-shadow: 2px 2px 0 #000; }
+.pill.v-repentance-plus.active { background: rgba(240,72,120,0.25);  border-color: var(--version-repentance-plus); color: var(--version-repentance-plus); box-shadow: 2px 2px 0 #000; }
+
+/* Estado activo */
+.pill.status-unlocked.active { background: rgba(144,224,64,0.2);  border-color: var(--unlocked); color: var(--unlocked); box-shadow: 2px 2px 0 #000; }
+.pill.status-locked.active   { background: rgba(60,40,56,0.6);    border-color: #8a6a80;         color: #c0a0b8;         box-shadow: 2px 2px 0 #000; }
+
+/* Categorías activas */
+.pill.cat-character.active  { background: rgba(230,180,80,0.2);  border-color: #e6b450; color: #e6b450; box-shadow: 2px 2px 0 #000; }
+.pill.cat-item.active       { background: rgba(144,210,80,0.2);  border-color: #90d250; color: #90d250; box-shadow: 2px 2px 0 #000; }
+.pill.cat-challenge.active  { background: rgba(80,210,210,0.2);  border-color: #50d2d2; color: #50d2d2; box-shadow: 2px 2px 0 #000; }
+.pill.cat-boss.active       { background: rgba(240,100,80,0.2);  border-color: #f06450; color: #f06450; box-shadow: 2px 2px 0 #000; }
+.pill.cat-area.active       { background: rgba(80,160,240,0.2);  border-color: #50a0f0; color: #50a0f0; box-shadow: 2px 2px 0 #000; }
+.pill.cat-coop.active       { background: rgba(240,180,80,0.2);  border-color: #f0b450; color: #f0b450; box-shadow: 2px 2px 0 #000; }
+.pill.cat-donation.active   { background: rgba(80,240,160,0.2);  border-color: #50f0a0; color: #50f0a0; box-shadow: 2px 2px 0 #000; }
+.pill.cat-progression.active{ background: rgba(200,80,240,0.2);  border-color: #c850f0; color: #c850f0; box-shadow: 2px 2px 0 #000; }
+.pill.cat-collection.active { background: rgba(240,210,80,0.2);  border-color: #f0d250; color: #f0d250; box-shadow: 2px 2px 0 #000; }
 
 /* Input de búsqueda */
 .pixel-input {
-  padding: 0.4rem 0.6rem;
-  background: var(--bg-card);
+  padding: 0.4rem 0.7rem;
+  background: var(--bg-card-2);
   border: 1px solid var(--border);
   color: var(--text-main);
   font-family: 'VT323', monospace;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   outline: none;
-  width: 180px;
+  width: 200px;
 }
 
 .pixel-input:focus {
   border-color: var(--border-glow);
-  box-shadow: 0 0 6px rgba(107, 31, 62, 0.4);
+  box-shadow: 0 0 8px rgba(140, 42, 82, 0.5);
 }
 
 .pixel-input::placeholder { color: var(--text-hint); }
 
-/* ── PANTALLAS DE CARGA Y ERROR ── */
+/* ── PANTALLAS CARGA / ERROR ── */
 .loading-screen, .error-screen {
   display: flex;
   flex-direction: column;
@@ -533,12 +540,12 @@ body {
   50% { transform: scale(1.2); opacity: 0.7; }
 }
 
-.loading-text { color: var(--text-dim); font-size: 1.3rem; }
+.loading-text { color: var(--text-main); font-size: 1.4rem; }
 
 .loading-dots { display: flex; gap: 0.4rem; }
 .loading-dots span {
   width: 8px; height: 8px;
-  background: var(--red-mid);
+  background: var(--red-bright);
   border-radius: 0;
   animation: dotBounce 0.8s ease-in-out infinite;
 }
@@ -565,27 +572,30 @@ body {
 }
 
 .version-title {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   letter-spacing: 0.1em;
+  text-shadow: 0 0 12px currentColor;
 }
 
 .version-progress-mini {
   font-family: 'VT323', monospace;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--text-dim);
   margin-left: auto;
 }
 
 .version-bar {
-  height: 4px;
+  height: 5px;
   background: var(--locked);
   flex: 1;
-  max-width: 120px;
+  max-width: 140px;
+  border: 1px solid var(--border);
 }
 
 .version-bar-fill {
   height: 100%;
   transition: width 0.8s ease;
+  filter: brightness(1.2);
 }
 
 /* ── GRID DE LOGROS ── */
@@ -595,7 +605,7 @@ body {
   gap: 0.8rem;
 }
 
-/* Tarjeta de logro individual */
+/* Tarjeta base */
 .achievement-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -612,21 +622,21 @@ body {
 .achievement-card:hover {
   border-color: var(--border-glow);
   transform: translateY(-2px);
-  box-shadow: 0 4px 0 #000, 0 0 12px rgba(107, 31, 62, 0.3);
+  box-shadow: 0 4px 0 #000, 0 0 16px rgba(140,42,82,0.35);
 }
 
 /* Tarjeta desbloqueada */
 .achievement-card.is-unlocked {
-  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(28, 20, 10, 1) 100%);
-  border-color: rgba(200, 164, 40, 0.3);
+  background: linear-gradient(135deg, #221610 0%, #1c180a 100%);
+  border-color: rgba(224,180,48,0.4);
 }
 
 .achievement-card.is-unlocked:hover {
-  border-color: var(--gold);
+  border-color: var(--gold-light);
   box-shadow: 0 4px 0 #000, var(--glow-gold);
 }
 
-/* Indicador de desbloqueo (esquina superior derecha) */
+/* Indicador triángulo dorado */
 .achievement-card::after {
   content: '';
   position: absolute;
@@ -636,7 +646,7 @@ body {
 
 .achievement-card.is-unlocked::after {
   border-left: 16px solid transparent;
-  border-top: 16px solid var(--gold);
+  border-top: 16px solid var(--gold-light);
 }
 
 /* Fila superior: icono + nombre */
@@ -656,7 +666,7 @@ body {
 }
 
 .card-icon.is-locked {
-  filter: grayscale(100%) brightness(0.4);
+  filter: grayscale(100%) brightness(0.35);
 }
 
 .card-icon-placeholder {
@@ -682,10 +692,9 @@ body {
   color: var(--text-dim);
 }
 
-/* Descripción corta */
 .card-desc {
   font-family: 'VT323', monospace;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--text-dim);
   line-height: 1.3;
 }
@@ -695,7 +704,7 @@ body {
   color: var(--text-hint);
 }
 
-/* Pie de tarjeta: tags */
+/* Pie: tags */
 .card-footer {
   display: flex;
   gap: 0.3rem;
@@ -703,30 +712,94 @@ body {
   margin-top: auto;
 }
 
-.card-tag {
+/* ── TAGS — clases base ── */
+.card-tag, .meta-tag {
   font-size: 0.35rem;
   padding: 0.2rem 0.4rem;
   border: 1px solid;
   text-transform: uppercase;
+  font-family: 'Press Start 2P', monospace;
 }
 
-.card-tag.tag-character { color: #bf9a4a; border-color: #bf9a4a; background: rgba(191,154,74,0.1); }
-.card-tag.tag-challenge { color: #4abfbf; border-color: #4abfbf; background: rgba(74,191,191,0.1); }
-.card-tag.tag-item      { color: #9abf4a; border-color: #9abf4a; background: rgba(154,191,74,0.1); }
-.card-tag.tag-general   { color: #7a7abf; border-color: #7a7abf; background: rgba(122,122,191,0.1); }
-.card-tag.tag-secret    { color: #bf4abf; border-color: #bf4abf; background: rgba(191,74,191,0.1); }
+.meta-tag {
+  font-size: 0.38rem;
+  padding: 0.25rem 0.5rem;
+}
 
-/* Logros "solo de Steam" (no están en nuestra base de datos) */
+/* ── TAGS — categorías principales ── */
+.tag-character   { color: #f0c060; border-color: #f0c060; background: rgba(240,192,96,0.12); }
+.tag-item        { color: #a0e060; border-color: #a0e060; background: rgba(160,224,96,0.12); }
+.tag-boss        { color: #ff6050; border-color: #ff6050; background: rgba(255,96,80,0.12); }
+.tag-boss-rush   { color: #ff9040; border-color: #ff9040; background: rgba(255,144,64,0.12); }
+.tag-challenge   { color: #40e0e0; border-color: #40e0e0; background: rgba(64,224,224,0.12); }
+.tag-area        { color: #60b8ff; border-color: #60b8ff; background: rgba(96,184,255,0.12); }
+.tag-coop        { color: #ffb830; border-color: #ffb830; background: rgba(255,184,48,0.12); }
+.tag-donation    { color: #40e090; border-color: #40e090; background: rgba(64,224,144,0.12); }
+.tag-shop        { color: #40d890; border-color: #40d890; background: rgba(64,216,144,0.12); }
+.tag-nodamage    { color: #90ffb0; border-color: #90ffb0; background: rgba(144,255,176,0.12); }
+.tag-hard        { color: #ff4060; border-color: #ff4060; background: rgba(255,64,96,0.12); }
+.tag-transform   { color: #d060ff; border-color: #d060ff; background: rgba(208,96,255,0.12); }
+.tag-collection  { color: #ffd040; border-color: #ffd040; background: rgba(255,208,64,0.12); }
+.tag-progression { color: #c060ff; border-color: #c060ff; background: rgba(192,96,255,0.12); }
+.tag-difficulty  { color: #ff8040; border-color: #ff8040; background: rgba(255,128,64,0.12); }
+.tag-completion  { color: #ffec50; border-color: #ffec50; background: rgba(255,236,80,0.12); }
+.tag-explore     { color: #70e8d0; border-color: #70e8d0; background: rgba(112,232,208,0.12); }
+.tag-angel       { color: #e0e0ff; border-color: #e0e0ff; background: rgba(224,224,255,0.12); }
+.tag-devil       { color: #ff3060; border-color: #ff3060; background: rgba(255,48,96,0.12); }
+.tag-deaths      { color: #a060a0; border-color: #a060a0; background: rgba(160,96,160,0.12); }
+.tag-secret      { color: #e040e0; border-color: #e040e0; background: rgba(224,64,224,0.12); }
+.tag-platinum    { color: #f0f0a0; border-color: #f0f0a0; background: rgba(240,240,160,0.12); }
+.tag-blubaby     { color: #60c8ff; border-color: #60c8ff; background: rgba(96,200,255,0.12); }
+
+/* Tags de personaje — todos con tono dorado/castaño diferenciado */
+.tag-chr-isaac      { color: #f8d060; border-color: #f8d060; background: rgba(248,208,96,0.10); }
+.tag-chr-magdalene  { color: #f0a0e0; border-color: #f0a0e0; background: rgba(240,160,224,0.10); }
+.tag-chr-cain       { color: #e0c070; border-color: #e0c070; background: rgba(224,192,112,0.10); }
+.tag-chr-judas      { color: #d060d0; border-color: #d060d0; background: rgba(208,96,208,0.10); }
+.tag-chr-eve        { color: #f08080; border-color: #f08080; background: rgba(240,128,128,0.10); }
+.tag-chr-samson     { color: #e07840; border-color: #e07840; background: rgba(224,120,64,0.10); }
+.tag-chr-azazel     { color: #9060f0; border-color: #9060f0; background: rgba(144,96,240,0.10); }
+.tag-chr-lazarus    { color: #90d090; border-color: #90d090; background: rgba(144,208,144,0.10); }
+.tag-chr-eden       { color: #a0d8a0; border-color: #a0d8a0; background: rgba(160,216,160,0.10); }
+.tag-chr-thelost    { color: #c0c0c0; border-color: #c0c0c0; background: rgba(192,192,192,0.10); }
+
+/* Tags de personajes Tainted — más intensos */
+.tag-tainted               { color: #ff5070; border-color: #ff5070; background: rgba(255,80,112,0.12); }
+.tag-chr-t-isaac           { color: #ffd860; border-color: #ffd860; background: rgba(255,216,96,0.10); }
+.tag-chr-t-magdalene       { color: #ff90d8; border-color: #ff90d8; background: rgba(255,144,216,0.10); }
+.tag-chr-t-cain            { color: #d8a050; border-color: #d8a050; background: rgba(216,160,80,0.10); }
+.tag-chr-t-judas           { color: #c040c0; border-color: #c040c0; background: rgba(192,64,192,0.10); }
+.tag-chr-t-bluebaby        { color: #50b8f0; border-color: #50b8f0; background: rgba(80,184,240,0.10); }
+.tag-chr-t-eve             { color: #f06060; border-color: #f06060; background: rgba(240,96,96,0.10); }
+.tag-chr-t-samson          { color: #e06020; border-color: #e06020; background: rgba(224,96,32,0.10); }
+.tag-chr-t-azazel          { color: #8040f0; border-color: #8040f0; background: rgba(128,64,240,0.10); }
+.tag-chr-t-lazarus         { color: #70c070; border-color: #70c070; background: rgba(112,192,112,0.10); }
+.tag-chr-t-eden            { color: #80c880; border-color: #80c880; background: rgba(128,200,128,0.10); }
+.tag-chr-t-thelost         { color: #a0a0a0; border-color: #a0a0a0; background: rgba(160,160,160,0.10); }
+.tag-chr-t-lilith          { color: #f050a0; border-color: #f050a0; background: rgba(240,80,160,0.10); }
+.tag-chr-t-keeper          { color: #c09060; border-color: #c09060; background: rgba(192,144,96,0.10); }
+.tag-chr-t-apollyon        { color: #808080; border-color: #808080; background: rgba(128,128,128,0.10); }
+.tag-chr-t-forgotten       { color: #d0d0d0; border-color: #d0d0d0; background: rgba(208,208,208,0.10); }
+.tag-chr-t-bethany         { color: #f090a0; border-color: #f090a0; background: rgba(240,144,160,0.10); }
+.tag-chr-t-jacob           { color: #a0c0f0; border-color: #a0c0f0; background: rgba(160,192,240,0.10); }
+
+/* Tags de bosses finales — Repentance */
+.tag-mother     { color: #ff5090; border-color: #ff5090; background: rgba(255,80,144,0.12); }
+.tag-the-beast  { color: #ff3030; border-color: #ff3030; background: rgba(255,48,48,0.12); }
+.tag-home       { color: #a070ff; border-color: #a070ff; background: rgba(160,112,255,0.12); }
+.tag-online     { color: #30d0f0; border-color: #30d0f0; background: rgba(48,208,240,0.12); }
+
+/* Logros "solo Steam" */
 .achievement-card.steam-only {
-  opacity: 0.6;
+  opacity: 0.65;
   border-style: dashed;
 }
 
-/* ── MODAL DE DETALLE ── */
+/* ── MODAL ── */
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0,0,0,0.88);
   z-index: 500;
   display: flex;
   align-items: center;
@@ -740,29 +813,34 @@ body {
 .modal-card {
   background: var(--bg-card);
   border: 2px solid var(--border);
-  max-width: 500px;
+  max-width: 520px;
   width: 100%;
   padding: 1.5rem;
-  box-shadow: 0 0 0 1px #000, 0 0 40px rgba(107, 31, 62, 0.4);
+  box-shadow:
+    0 0 0 1px #000,
+    0 0 50px rgba(140, 42, 82, 0.5),
+    inset 0 0 30px rgba(0,0,0,0.3);
   position: relative;
   max-height: 90vh;
   overflow-y: auto;
   animation: slideUp 0.2s ease;
 }
 
-@keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: none; opacity: 1; }
+}
 
-/* Esquinas del modal */
 .modal-card::before, .modal-card::after {
   content: '';
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-color: var(--gold);
   border-style: solid;
 }
-.modal-card::before { top: 6px; left: 6px; border-width: 2px 0 0 2px; }
-.modal-card::after  { bottom: 6px; right: 6px; border-width: 0 2px 2px 0; }
+.modal-card::before { top: 6px;    left: 6px;    border-width: 2px 0 0 2px; }
+.modal-card::after  { bottom: 6px; right: 6px;   border-width: 0 2px 2px 0; }
 
 .modal-close {
   position: absolute;
@@ -778,24 +856,24 @@ body {
 }
 
 .modal-icon {
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
   image-rendering: pixelated;
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   flex-shrink: 0;
 }
 
 .modal-titles { flex: 1; }
 
 .modal-name {
-  font-size: 0.65rem;
+  font-size: 0.68rem;
   color: var(--text-main);
   line-height: 1.6;
 }
 
 .modal-version-badge {
   display: inline-block;
-  font-size: 0.4rem;
+  font-size: 0.42rem;
   padding: 0.2rem 0.5rem;
   border: 1px solid;
   margin-top: 0.4rem;
@@ -804,14 +882,16 @@ body {
 .modal-status {
   font-size: 0.5rem;
   font-family: 'VT323', monospace;
-  padding: 0.4rem 0.7rem;
+  padding: 0.4rem 0.8rem;
   border: 1px solid;
+  white-space: nowrap;
 }
 
 .modal-status.unlocked {
   color: var(--unlocked);
   border-color: var(--unlocked);
-  background: rgba(168,200,64,0.1);
+  background: rgba(144,224,64,0.12);
+  text-shadow: var(--glow-green);
 }
 
 .modal-status.locked {
@@ -822,44 +902,46 @@ body {
 .modal-section { margin-bottom: 1rem; }
 
 .modal-section-title {
-  font-size: 0.4rem;
-  color: var(--gold);
+  font-size: 0.42rem;
+  color: var(--gold-light);
   letter-spacing: 0.1em;
   margin-bottom: 0.5rem;
   border-bottom: 1px solid var(--border);
   padding-bottom: 0.3rem;
+  text-shadow: 0 0 8px rgba(255,218,96,0.4);
 }
 
-.modal-desc, .modal-how {
+.modal-desc {
   color: var(--text-dim);
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.5;
 }
 
 .modal-how {
   color: var(--text-main);
-  background: var(--bg-card-2);
-  padding: 0.8rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  background: rgba(14,9,12,0.7);
+  padding: 0.8rem 1rem;
   border-left: 3px solid var(--gold);
 }
 
 .modal-meta {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
+  margin-bottom: 0.5rem;
 }
 
-.meta-tag {
-  font-size: 0.4rem;
-  padding: 0.3rem 0.6rem;
-  background: var(--bg-card-2);
-  border: 1px solid var(--border);
-  color: var(--text-dim);
+.modal-date-wrap { margin-top: 0.3rem; }
+
+.modal-unlock-date {
+  color: var(--unlocked) !important;
+  border-color: var(--unlocked) !important;
+  background: rgba(144,224,64,0.1) !important;
 }
 
-.modal-unlock-date { color: var(--unlocked); border-color: var(--unlocked); }
-
-/* ── MENSAJE "SIN RESULTADOS" ── */
+/* ── SIN RESULTADOS ── */
 .no-results {
   text-align: center;
   padding: 3rem;
@@ -868,11 +950,11 @@ body {
 
 .no-results-icon { font-size: 2.5rem; display: block; margin-bottom: 1rem; }
 
-/* ── SCROLLBAR PERSONALIZADA ── */
+/* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-deep); }
 ::-webkit-scrollbar-thumb { background: var(--border-glow); }
-::-webkit-scrollbar-thumb:hover { background: var(--red-mid); }
+::-webkit-scrollbar-thumb:hover { background: var(--red-bright); }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 600px) {
@@ -882,4 +964,5 @@ body {
   .header-title { display: none; }
   .achievements-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   .filters-bar { padding: 0.8rem 1rem; }
+  .pixel-input { width: 150px; }
 }
