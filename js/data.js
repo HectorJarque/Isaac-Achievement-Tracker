@@ -1,7 +1,7 @@
-// Este archivo contiene la base de datos LOCAL de logros:
-// versión, categoría, personaje y cómo desbloquear cada uno.
-// Los datos de STEAM (nombre, descripción, icono, desbloqueado o no)
-// vienen del backend. Aquí COMPLEMENTAMOS esos datos con más info.
+// js/data.js
+// Base de datos LOCAL de logros de Isaac.
+// IMPORTANTE: ahora el match se hace por displayName (nombre visible en Steam),
+// no por el ID interno de Steam, que no podemos conocer sin llamar a la API.
 
 const VERSIONS = {
   rebirth:         { label: 'Rebirth',       class: 'v-rebirth',         color: '#4a7fbf' },
@@ -11,50 +11,35 @@ const VERSIONS = {
   repentance_plus: { label: 'Repentance+',   class: 'v-repentance-plus', color: '#bf4a6a' },
 };
 
-// Orden en el que se muestran las versiones
 const VERSION_ORDER = ['rebirth', 'afterbirth', 'afterbirth_plus', 'repentance', 'repentance_plus'];
 
-// Mapa de metadatos de logros, cargado desde achievements.json
-// Clave = ID interno de Steam, Valor = objeto con metadatos
 let ACHIEVEMENT_META_MAP = null;
 
-// Carga asíncrona del JSON de logros
 async function loadAchievementMeta() {
-  if (ACHIEVEMENT_META_MAP) return ACHIEVEMENT_META_MAP; // Ya estaba cargado
+  if (ACHIEVEMENT_META_MAP) return ACHIEVEMENT_META_MAP;
 
   const base = window.location.pathname.replace(/\/[^/]*$/, '');
   const response = await fetch(`${base}/data/achievements.json`);
-  
   const data = await response.json();
 
-  // Convertimos el array a un mapa para búsqueda rápida por ID
   ACHIEVEMENT_META_MAP = {};
   for (const ach of data.achievements) {
-    ACHIEVEMENT_META_MAP[ach.id] = ach;
+    const key = ach.displayName.toLowerCase().trim();
+    ACHIEVEMENT_META_MAP[key] = ach;
   }
 
   return ACHIEVEMENT_META_MAP;
 }
 
-// Función para obtener los metadatos de un logro por su ID de Steam
-function getMeta(steamAchievementId) {
-  if (!ACHIEVEMENT_META_MAP) return null;
-  return ACHIEVEMENT_META_MAP[steamAchievementId] || null;
+function getMeta(displayName) {
+  if (!ACHIEVEMENT_META_MAP || !displayName) return null;
+  return ACHIEVEMENT_META_MAP[displayName.toLowerCase().trim()] || null;
 }
 
-// Función para obtener la versión de un logro (con fallback)
-function getVersion(meta) {
-  if (!meta || !meta.version) return 'rebirth'; // Default: Rebirth si no lo sabemos
-  return meta.version;
-}
-
-// Formatea una fecha de desbloqueo de Unix timestamp a texto legible
 function formatUnlockDate(unixTimestamp) {
   if (!unixTimestamp || unixTimestamp === 0) return null;
-  const date = new Date(unixTimestamp * 1000); // Steam usa segundos, JS usa milisegundos
+  const date = new Date(unixTimestamp * 1000);
   return date.toLocaleDateString('es-ES', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
+    year: 'numeric', month: 'long', day: 'numeric',
   });
 }
