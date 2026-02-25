@@ -22,7 +22,9 @@ let ACHIEVEMENT_META_MAP = null;
 async function loadAchievementMeta() {
   if (ACHIEVEMENT_META_MAP) return ACHIEVEMENT_META_MAP; // Ya estaba cargado
 
-  const response = await fetch('./data/achievements.json');
+  const base = window.location.pathname.replace(/\/[^/]*$/, '');
+  const response = await fetch(`${base}/data/achievements.json`);
+  
   const data = await response.json();
 
   // Convertimos el array a un mapa para búsqueda rápida por ID
