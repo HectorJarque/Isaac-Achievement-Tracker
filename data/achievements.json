@@ -1,17 +1,17 @@
 {
-  "_info": "Base de datos de logros de The Binding of Isaac. Match por displayName exacto. Versiones: rebirth, afterbirth, afterbirth_plus, repentance, repentance_plus.",
-  "_errors_detected": [
-    "Wrapped Baby (n°172): El JSON fuente fusionaba las condiciones de Azazel y Lazarus. Corregido: solo Azazel.",
-    "Begotten Baby (n°173): El JSON fuente fusionaba las condiciones de Lazarus y Azazel. Corregido: solo Lazarus.",
-    "Darkness Falls (n°157): El JSON fuente duplicaba/fusionaba el texto de condición. Corregido: 'Derrota a ??? como Eve'.",
-    "Suicide King desafío (n°160): El JSON fuente incluía 'Defeat Mom's Heart 11 times' erróneamente. La condición real es desbloquear a Lazarus.",
-    "Suicide King (n°120 vs n°160): Dos secretos del juego comparten el nombre 'Suicide King'. Pueden tener displayNames distintos en Steam. Verificar.",
-    "Blue Candle (n°59): La condición '900 monedas' puede ser incorrecta según la wiki. Verificar.",
-    "Afterbirth #227 y #228: Ambos tienen el mismo name '2 new pills' en la fuente. Pueden tener displayNames distintos en Steam. Verificar.",
-    "Afterbirth #232 Kidney Stone: JSON fuente mezclaba los desafíos #29 y #30. Corregido a Onan's Streak (#29).",
-    "Afterbirth #233 Blank Rune: JSON fuente mezclaba los desafíos #29 y #30. Corregido a The Guardian (#30).",
-    "Afterbirth #270 I RULE!: Condición triple/ambigua en fuente. Simplificada. Verificar con la wiki.",
-    "Afterbirth #273 Onan's Streak (challenge): Condición ambigua en fuente. Simplificada a 'Derrota a Mom'."
+  "_info": "Base de datos de logros de The Binding of Isaac. Match por displayName exacto (case-insensitive). Versiones: rebirth, afterbirth, afterbirth_plus, repentance, repentance_plus.",
+  "_errors_corrected": [
+    "Rebirth #172 Wrapped Baby: CORREGIDO a Lazarus (fuente tenía Azazel).",
+    "Rebirth #173 Begotten Baby: CORREGIDO a Azazel (fuente tenía Lazarus).",
+    "Rebirth #157 Darkness Falls: CORREGIDO condición duplicada — real: 'Derrota ??? como Eve'.",
+    "Rebirth #160 Suicide King (challenge): CORREGIDO condición errónea — real: 'Desbloquea a Lazarus'.",
+    "Rebirth #120/#160 Suicide King: Dos logros con mismo displayName en Steam (confirmado). Unificado en una entrada con nota.",
+    "Rebirth #59 Blue Candle: Confirmado 900 monedas — correcto.",
+    "Afterbirth #227/#228 '2 new pills': Mismo displayName en Steam (confirmado). Unificado en una entrada con nota.",
+    "Afterbirth #232 Kidney Stone: CORREGIDO a Onan's Streak (#29).",
+    "Afterbirth #233 Blank Rune: CORREGIDO a The Guardian (#30).",
+    "Afterbirth #270 I RULE!: Condición triple ambigua simplificada.",
+    "Afterbirth #273 Onan's Streak (challenge): Condición ambigua simplificada."
   ],
   "achievements": [
     {
@@ -188,6 +188,42 @@
     {
       "displayName": "The Necropolis",
       "howToUnlock": "Derrota a todos los jefes de las Depths (excepto Reap Creep).",
+      "version": "rebirth",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Sheol",
+      "howToUnlock": "Derrota a Mom's Heart llevando el objeto The Negative para desbloquear Sheol.",
+      "version": "rebirth",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Chest",
+      "howToUnlock": "Derrota a ??? (Blue Baby) llevando el objeto The Polaroid para desbloquear The Chest.",
+      "version": "rebirth",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Dark Room",
+      "howToUnlock": "Derrota a Satan llevando el objeto The Negative para desbloquear The Dark Room.",
       "version": "rebirth",
       "category": "area",
       "character": null,
@@ -1415,7 +1451,7 @@
     },
     {
       "displayName": "Suicide King",
-      "howToUnlock": "Completa el desafío Suicide King (Desafío #7). NOTA: Hay un conflicto de nombre con el desafío #160 del juego.",
+      "howToUnlock": "[OBJETO] Completa el desafío Suicide King (Desafío #7). ⚠ Nota: este displayName es compartido en Steam por dos logros distintos: el objeto (nº120) y el desbloqueo del desafío (nº160). Solo el primero encontrado aquí será emparejado.",
       "version": "rebirth",
       "category": "item",
       "character": null,
@@ -1837,18 +1873,6 @@
       ]
     },
     {
-      "displayName": "Suicide King (Challenge #7)",
-      "howToUnlock": "Desbloquea a Lazarus (ten 4 o más corazones de alma al mismo tiempo) para desbloquear el desafío Suicide King (#7). ⚠ NOTA: El nombre exacto en Steam puede diferir del objeto homónimo. Verificar.",
-      "version": "rebirth",
-      "category": "challenge",
-      "character": "Lazarus",
-      "secret": false,
-      "tags": [
-        "DESAFÍO",
-        "LAZARUS"
-      ]
-    },
-    {
       "displayName": "Cat Got Your Tongue",
       "howToUnlock": "Conviértete en Guppy para desbloquear el desafío Cat Got Your Tongue (#8).",
       "version": "rebirth",
@@ -1987,19 +2011,6 @@
     },
     {
       "displayName": "Wrapped Baby",
-      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Azazel.",
-      "version": "rebirth",
-      "category": "co-op",
-      "character": "Azazel",
-      "secret": false,
-      "tags": [
-        "CO-OP",
-        "AZAZEL",
-        "HARD MODE"
-      ]
-    },
-    {
-      "displayName": "Begotten Baby",
       "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Lazarus.",
       "version": "rebirth",
       "category": "co-op",
@@ -2008,6 +2019,19 @@
       "tags": [
         "CO-OP",
         "LAZARUS",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Begotten Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Azazel.",
+      "version": "rebirth",
+      "category": "co-op",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "AZAZEL",
         "HARD MODE"
       ]
     },
@@ -2509,7 +2533,7 @@
     },
     {
       "displayName": "Lilith",
-      "howToUnlock": "Derrota a Ultra Greed como Azazel para desbloquear a Lilith como personaje.",
+      "howToUnlock": "Derrota a Ultra Greed como Azazel para desbloquear a Lilith como personaje jugable.",
       "version": "afterbirth",
       "category": "character",
       "character": "Lilith",
@@ -2896,19 +2920,7 @@
     },
     {
       "displayName": "2 new pills",
-      "howToUnlock": "Completa el desafío PAY TO PLAY (Desafío #24) para añadir 2 nuevas pastillas al pool.",
-      "version": "afterbirth",
-      "category": "item",
-      "character": null,
-      "secret": false,
-      "tags": [
-        "OBJETO",
-        "DESAFÍO"
-      ]
-    },
-    {
-      "displayName": "2 new pills",
-      "howToUnlock": "Completa el desafío Have a Heart (Desafío #25) para añadir 2 nuevas pastillas al pool.",
+      "howToUnlock": "Completa el desafío PAY TO PLAY (#24) o Have a Heart (#25). ⚠ Nota: ambos logros comparten el mismo displayName en Steam, solo uno puede ser emparejado.",
       "version": "afterbirth",
       "category": "item",
       "character": null,
@@ -2980,7 +2992,7 @@
     },
     {
       "displayName": "Blue Womb",
-      "howToUnlock": "Derrota a Mom's Heart (o It Lives!) 10 veces para desbloquear el Blue Womb (Hush).",
+      "howToUnlock": "Derrota a Mom's Heart (o It Lives!) 10 veces para desbloquear el Blue Womb donde aparece Hush.",
       "version": "afterbirth",
       "category": "area",
       "character": null,
@@ -3471,7 +3483,7 @@
     },
     {
       "displayName": "I RULE!",
-      "howToUnlock": "Ten desbloqueado The Negative y derrota a ??? o The Lamb, además de haber derrotado a Satan como Isaac, para desbloquear el desafío I RULE! (#26).",
+      "howToUnlock": "Ten desbloqueado The Negative y completa el juego (derrota ??? o The Lamb) habiendo derrotado a Satan como Isaac para desbloquear el desafío I RULE! (#26).",
       "version": "afterbirth",
       "category": "challenge",
       "character": "Isaac",
@@ -3532,7 +3544,7 @@
     },
     {
       "displayName": "Mega",
-      "howToUnlock": "Derrota a Mega Satan con todos los personajes (excepto los Tainted).",
+      "howToUnlock": "Derrota a Mega Satan con todos los personajes base (excepto los Tainted).",
       "version": "afterbirth",
       "category": "boss",
       "character": null,
@@ -3541,6 +3553,1641 @@
         "BOSS",
         "MEGA SATAN",
         "100%"
+      ]
+    },
+    {
+      "displayName": "Backasswards",
+      "howToUnlock": "Derrota a ??? o The Lamb (con Polaroid o Negative), o derrota a Mega Satan teniendo The Negative, para desbloquear el desafío Backasswards (#31).",
+      "version": "afterbirth_plus",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Aprils fool",
+      "howToUnlock": "Derrota a Mom para desbloquear el desafío Aprils Fool (#32).",
+      "version": "afterbirth_plus",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Pokey Mans",
+      "howToUnlock": "Derrota a Mom's Heart 11 veces para desbloquear el desafío Pokey Mans (#33).",
+      "version": "afterbirth_plus",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Ultra Hard",
+      "howToUnlock": "Derrota a ??? o The Lamb (con Polaroid o Negative), o derrota a Mega Satan teniendo The Negative, para desbloquear el desafío Ultra Hard (#34).",
+      "version": "afterbirth_plus",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "PONG",
+      "howToUnlock": "Derrota a Isaac 5 veces en total para desbloquear el desafío PONG (#35).",
+      "version": "afterbirth_plus",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "D infinity",
+      "howToUnlock": "Derrota a Delirium como Isaac.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "ISAAC",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Eucharist",
+      "howToUnlock": "Derrota a Delirium como Magdalene.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "MAGDALENE",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Silver Dollar",
+      "howToUnlock": "Derrota a Delirium como Cain.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "CAIN",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Shade",
+      "howToUnlock": "Derrota a Delirium como Judas.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JUDAS",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "King Baby",
+      "howToUnlock": "Derrota a Delirium como ??? (Blue Baby).",
+      "version": "afterbirth_plus",
+      "category": "co-op",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "???",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Bloody Crown",
+      "howToUnlock": "Derrota a Delirium como Samson.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "SAMSON",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Dull Razor",
+      "howToUnlock": "Derrota a Delirium como Eve.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EVE",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Eden's Soul",
+      "howToUnlock": "Derrota a Delirium como Eden.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EDEN",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Dark Prince's Crown",
+      "howToUnlock": "Derrota a Delirium como Azazel.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "AZAZEL",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Compound Fracture",
+      "howToUnlock": "Derrota a Delirium como Lazarus.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LAZARUS",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Euthanasia",
+      "howToUnlock": "Derrota a Delirium como Lilith.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LILITH",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Holy Card",
+      "howToUnlock": "Derrota a Delirium como The Lost.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "The Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE LOST",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Crooked Penny",
+      "howToUnlock": "Derrota a Delirium como Keeper.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "KEEPER",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Void",
+      "howToUnlock": "Derrota a Delirium como Apollyon.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "APOLLYON",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "D1",
+      "howToUnlock": "Derrota a Ultra Greedier como Isaac.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "ISAAC",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Glyph of Balance",
+      "howToUnlock": "Derrota a Ultra Greedier como Magdalene.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "MAGDALENE",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Sack of Sacks",
+      "howToUnlock": "Derrota a Ultra Greedier como Cain.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "CAIN",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Eye of Belial",
+      "howToUnlock": "Derrota a Ultra Greedier como Judas.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JUDAS",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Meconium",
+      "howToUnlock": "Derrota a Ultra Greedier como ??? (Blue Baby).",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "???",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Stem Cell",
+      "howToUnlock": "Derrota a Ultra Greedier como Samson.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "SAMSON",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Crow Heart",
+      "howToUnlock": "Derrota a Ultra Greedier como Eve.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EVE",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Metronome",
+      "howToUnlock": "Derrota a Ultra Greedier como Eden.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EDEN",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Bat Wing",
+      "howToUnlock": "Derrota a Ultra Greedier como Azazel.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "AZAZEL",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Plan C",
+      "howToUnlock": "Derrota a Ultra Greedier como Lazarus.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LAZARUS",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Duality",
+      "howToUnlock": "Derrota a Ultra Greedier como Lilith.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LILITH",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Dad's Lost Coin",
+      "howToUnlock": "Derrota a Ultra Greedier como The Lost.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "The Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE LOST",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Eye of Greed",
+      "howToUnlock": "Derrota a Ultra Greedier como Keeper.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "KEEPER",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Black Rune",
+      "howToUnlock": "Derrota a Ultra Greedier como Apollyon.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "APOLLYON",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Locust of Wrath",
+      "howToUnlock": "Derrota a Isaac como Apollyon.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "APOLLYON",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Locust of Pestilence",
+      "howToUnlock": "Derrota a Satan como Apollyon.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "APOLLYON",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Locust of Famine",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como Apollyon.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "APOLLYON",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Locust of Death",
+      "howToUnlock": "Derrota a The Lamb como Apollyon.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "APOLLYON",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Locust of Conquest",
+      "howToUnlock": "Completa el Boss Rush como Apollyon.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "APOLLYON",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Hushy",
+      "howToUnlock": "Derrota a Hush como Apollyon.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "APOLLYON",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Brown Nugget",
+      "howToUnlock": "Derrota a Ultra Greed como Apollyon.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "APOLLYON",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Mort Baby",
+      "howToUnlock": "Derrota a Mega Satan como Apollyon.",
+      "version": "afterbirth_plus",
+      "category": "co-op",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "APOLLYON",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Smelter",
+      "howToUnlock": "Derrota a Mom's Heart o It Lives! en modo Difícil como Apollyon.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "APOLLYON",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Apollyon Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como Apollyon.",
+      "version": "afterbirth_plus",
+      "category": "co-op",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "APOLLYON",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Apollyon",
+      "howToUnlock": "Derrota a Mega Satan por primera vez para desbloquear a Apollyon como personaje.",
+      "version": "afterbirth_plus",
+      "category": "character",
+      "character": "Apollyon",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "APOLLYON",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "New Area",
+      "howToUnlock": "Derrota a Hush para desbloquear The Void (nueva área con Delirium).",
+      "version": "afterbirth_plus",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Burning Basement",
+      "howToUnlock": "Derrota a Mom's Heart 11 veces para desbloquear el Burning Basement como stage alternativo.",
+      "version": "afterbirth_plus",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Flooded Caves",
+      "howToUnlock": "Derrota a It Lives! 16 veces para desbloquear las Flooded Caves como stage alternativo.",
+      "version": "afterbirth_plus",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Dank Depths",
+      "howToUnlock": "Derrota a It Lives! 21 veces para desbloquear las Dank Depths como stage alternativo.",
+      "version": "afterbirth_plus",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Scarred Womb",
+      "howToUnlock": "Derrota a It Lives! 30 veces para desbloquear la Scarred Womb como stage alternativo.",
+      "version": "afterbirth_plus",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Greedier!",
+      "howToUnlock": "Dona 500 monedas a la Greed Donation Machine para desbloquear el modo Greedier.",
+      "version": "afterbirth_plus",
+      "category": "progression",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "PROGRESIÓN",
+        "GREED MODE",
+        "DONACIÓN"
+      ]
+    },
+    {
+      "displayName": "Something wicked this way comes!",
+      "howToUnlock": "Derrota a ??? (Blue Baby) con 3 personajes distintos para desbloquear nuevos jefes.",
+      "version": "afterbirth_plus",
+      "category": "boss",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "BOSS",
+        "PROGRESIÓN"
+      ]
+    },
+    {
+      "displayName": "Something wicked this way comes+!",
+      "howToUnlock": "Derrota a ??? (Blue Baby) con 6 personajes distintos para desbloquear aún más jefes.",
+      "version": "afterbirth_plus",
+      "category": "boss",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "BOSS",
+        "PROGRESIÓN"
+      ]
+    },
+    {
+      "displayName": "The gate is open!",
+      "howToUnlock": "Derrota a The Lamb para desbloquear nuevos enemigos.",
+      "version": "afterbirth_plus",
+      "category": "boss",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "BOSS",
+        "PROGRESIÓN"
+      ]
+    },
+    {
+      "displayName": "Laz Bleeds More!",
+      "howToUnlock": "Completa el desafío Backasswards (Desafío #31) para que Lazarus empiece con una desventaja de sangre.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LAZARUS",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Maggy Now Holds a Pill!",
+      "howToUnlock": "Completa el desafío Aprils Fool (Desafío #32) para que Magdalene empiece con una pastilla.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "MAGDALENE",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Charged Key",
+      "howToUnlock": "Completa el desafío Pokey Mans (Desafío #33).",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Samson Feels Healthy!",
+      "howToUnlock": "Completa el desafío Ultra Hard (Desafío #34) para que Samson empiece con ventaja de salud.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "SAMSON",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Greed's Gullet",
+      "howToUnlock": "Completa el desafío Pong (Desafío #35).",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Once More with Feeling!",
+      "howToUnlock": "Completa una Victory Lap derrotando a The Lamb.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "VICTORY LAP"
+      ]
+    },
+    {
+      "displayName": "Hat trick!",
+      "howToUnlock": "Consigue una racha de 3 victorias seguidas.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "RACHA"
+      ]
+    },
+    {
+      "displayName": "5 Nights at Mom's",
+      "howToUnlock": "Consigue una racha de 5 victorias seguidas usando un personaje diferente cada vez.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "EXPLORACIÓN",
+        "RACHA"
+      ]
+    },
+    {
+      "displayName": "Sin collector",
+      "howToUnlock": "Completa el Bestiario (mata al menos una vez a cada enemigo del juego).",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN",
+        "BESTIARIO"
+      ]
+    },
+    {
+      "displayName": "Dedication",
+      "howToUnlock": "Participa en 31 Desafíos Diarios.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DAILY CHALLENGE"
+      ]
+    },
+    {
+      "displayName": "ZIP!",
+      "howToUnlock": "Derrota a The Lamb en menos de 20 minutos.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "VELOCIDAD"
+      ]
+    },
+    {
+      "displayName": "It's the Key",
+      "howToUnlock": "Derrota a The Lamb sin recoger corazones, monedas ni bombas durante toda la partida.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "RESTRICCIÓN"
+      ]
+    },
+    {
+      "displayName": "Mr. Resetter!",
+      "howToUnlock": "Reinicia la partida 7 veces seguidas (en Switch/PS4: acumula una racha de -10 victorias).",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO"
+      ]
+    },
+    {
+      "displayName": "Living on the edge",
+      "howToUnlock": "Completa una planta post-Basement con solo medio corazón de vida.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "RESTRICCIÓN"
+      ]
+    },
+    {
+      "displayName": "U Broke It!",
+      "howToUnlock": "Recoge 50 objetos en una sola partida.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "The Marathon",
+      "howToUnlock": "Consigue una racha de 5 victorias en Desafíos Diarios.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DAILY CHALLENGE",
+        "RACHA"
+      ]
+    },
+    {
+      "displayName": "RERUN",
+      "howToUnlock": "Completa 3 Victory Laps derrotando a The Lamb.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "VICTORY LAP"
+      ]
+    },
+    {
+      "displayName": "Delirious",
+      "howToUnlock": "Derrota a Delirium por primera vez.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "1000000%",
+      "howToUnlock": "Recoge todos los objetos del juego, desbloquea todos los secretos y finales, y completa el Bestiario.",
+      "version": "afterbirth_plus",
+      "category": "collection",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "COLECCIÓN",
+        "100%",
+        "BESTIARIO"
+      ]
+    },
+    {
+      "displayName": "Black Hole",
+      "howToUnlock": "Destruye 20 Portales (Portals).",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Mystery Gift",
+      "howToUnlock": "Destruye 500 rocas en total.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Sprinkler",
+      "howToUnlock": "Completa el Capítulo 1 sin recibir daño.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "NO DAMAGE"
+      ]
+    },
+    {
+      "displayName": "Angry Fly",
+      "howToUnlock": "Conviértete en Beelzebub (recoge 3 objetos de moscas en una partida).",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TRANSFORMACIÓN"
+      ]
+    },
+    {
+      "displayName": "Bozo",
+      "howToUnlock": "Destruye 5 Rainbow Poops (cacas arcoíris).",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Broken Modem",
+      "howToUnlock": "Completa 7 Desafíos Diarios.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DAILY CHALLENGE"
+      ]
+    },
+    {
+      "displayName": "Buddy in a Box",
+      "howToUnlock": "Recoge 5 familiares en una sola partida.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "Fast Bombs",
+      "howToUnlock": "Derrota a Little Horn 20 veces en total.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Lil Delirium",
+      "howToUnlock": "Derrota a Delirium por primera vez.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Hairpin",
+      "howToUnlock": "Recarga usando Lil' Batteries 20 veces en total.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO"
+      ]
+    },
+    {
+      "displayName": "Wooden Cross",
+      "howToUnlock": "Duerme en una cama (bed) durante una partida.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Butter!",
+      "howToUnlock": "Completa 2 Victory Laps derrotando a The Lamb.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "VICTORY LAP"
+      ]
+    },
+    {
+      "displayName": "Huge Growth",
+      "howToUnlock": "Aumenta de tamaño 5 veces en una sola partida.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO"
+      ]
+    },
+    {
+      "displayName": "Ancient Recall",
+      "howToUnlock": "Usa cartas y runas 20 veces en total.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO"
+      ]
+    },
+    {
+      "displayName": "Era Walk",
+      "howToUnlock": "Ten tanto Broken Watch como Stop Watch en tu colección de la misma partida.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "Coupon",
+      "howToUnlock": "Compra objetos en Tiendas, Devil Rooms o Mercados 50 veces en total.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Telekinesis",
+      "howToUnlock": "Completa el Capítulo 2 sin recibir daño.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "NO DAMAGE"
+      ]
+    },
+    {
+      "displayName": "Moving Box",
+      "howToUnlock": "Usa el objeto Pandora's Box en la Dark Room.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Jumper Cables",
+      "howToUnlock": "Recoge 2 objetos o trinkets con la etiqueta 'battery' en una misma partida.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "Leprosy",
+      "howToUnlock": "Completa el Capítulo 3 sin recibir daño.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "NO DAMAGE"
+      ]
+    },
+    {
+      "displayName": "Technology Zero",
+      "howToUnlock": "Recoge 2 objetos de tecnología en una misma partida.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "Filigree Feather",
+      "howToUnlock": "Recoge tanto Key Piece 1 como Key Piece 2 en una misma partida.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "ANGEL ROOM"
+      ]
+    },
+    {
+      "displayName": "Mr. ME!",
+      "howToUnlock": "Abre 20 cofres cerrados (Locked Chests) en total.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "7 Seals",
+      "howToUnlock": "Derrota a los 5 Jinetes del Apocalipsis (Harbingers) en total.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Angelic Prism",
+      "howToUnlock": "Derrota a un Ángel 10 veces en total.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS",
+        "ANGEL ROOM"
+      ]
+    },
+    {
+      "displayName": "Pop!",
+      "howToUnlock": "Completa el Capítulo 4 sin recibir daño.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "NO DAMAGE"
+      ]
+    },
+    {
+      "displayName": "Door Stop",
+      "howToUnlock": "Destruye puertas y paredes de salas secretas 50 veces en total con explosivos.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Death's List",
+      "howToUnlock": "Haz 25 tratos con el Diablo en total.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DEVIL DEAL"
+      ]
+    },
+    {
+      "displayName": "Haemolacria",
+      "howToUnlock": "Recoge Blood Clot 10 veces en total.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "Lachryphagy",
+      "howToUnlock": "Recoge 10 objetos o pastillas de tipo 'Tears Up' en una misma partida.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "Schoolbag",
+      "howToUnlock": "Entra en 6 tiendas (Shops) en una misma partida.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Trisagion",
+      "howToUnlock": "Recoge 25 objetos de salas de Ángel en total.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "ANGEL ROOM"
+      ]
+    },
+    {
+      "displayName": "Extension Cord",
+      "howToUnlock": "Ten The Battery, 9 Volt y Car Battery en tu colección de una misma partida.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "Flat Stone",
+      "howToUnlock": "Recoge Rubber Cement 5 veces en total.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "Sacrificial Altar",
+      "howToUnlock": "Haz 50 tratos con el Diablo en total.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DEVIL DEAL"
+      ]
+    },
+    {
+      "displayName": "Lil Spewer",
+      "howToUnlock": "Muere a causa de tu propia explosión (Ipecac, Bob's Rotten Head o la pastilla Horf!).",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "MUERTES"
+      ]
+    },
+    {
+      "displayName": "Blanket",
+      "howToUnlock": "Duerme en 10 camas (beds) en total a lo largo de varias partidas.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Marbles",
+      "howToUnlock": "Usa 5 pastillas Gulp! en una sola partida.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO"
+      ]
+    },
+    {
+      "displayName": "Mystery Egg",
+      "howToUnlock": "Haz que 3 enemigos encantados (charmed) estén en la misma sala al mismo tiempo.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO"
+      ]
+    },
+    {
+      "displayName": "Rotten Penny",
+      "howToUnlock": "Ten 20 Blue Flies al mismo tiempo.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO"
+      ]
+    },
+    {
+      "displayName": "Baby-Bender",
+      "howToUnlock": "Usa la carta I - The Magician o Telepathy For Dummies mientras ya tienes lágrimas con guía (homing tears).",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO"
+      ]
+    },
+    {
+      "displayName": "The Forgotten",
+      "howToUnlock": "Secuencia secreta: 1) Derrota a Mom sin recibir daño con el objeto Broken Shovel. 2) En la siguiente run, encuentra el Mom's Shovel en el Junk Room. 3) Usa el Mom's Shovel en la tumba del Basement para desbloquear a The Forgotten.",
+      "version": "afterbirth_plus",
+      "category": "character",
+      "character": "The Forgotten",
+      "secret": true,
+      "tags": [
+        "PERSONAJE",
+        "THE FORGOTTEN",
+        "SECRETO"
+      ]
+    },
+    {
+      "displayName": "Bone Heart",
+      "howToUnlock": "Se desbloquea automáticamente al desbloquear a The Forgotten.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE FORGOTTEN"
+      ]
+    },
+    {
+      "displayName": "Marrow",
+      "howToUnlock": "Derrota a Mom's Heart o It Lives! en modo Difícil como The Forgotten.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE FORGOTTEN",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Slipped Rib",
+      "howToUnlock": "Derrota a Isaac como The Forgotten.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE FORGOTTEN",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Pointy Rib",
+      "howToUnlock": "Derrota a Satan como The Forgotten.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE FORGOTTEN",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Jaw Bone",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como The Forgotten.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE FORGOTTEN",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Brittle Bones",
+      "howToUnlock": "Derrota a The Lamb como The Forgotten.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE FORGOTTEN",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Divorce Papers",
+      "howToUnlock": "Completa el Boss Rush como The Forgotten.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE FORGOTTEN",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Hallowed Ground",
+      "howToUnlock": "Derrota a Hush como The Forgotten.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE FORGOTTEN",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Finger Bone",
+      "howToUnlock": "Derrota a Ultra Greed como The Forgotten.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE FORGOTTEN",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Dad's Ring",
+      "howToUnlock": "Derrota a Ultra Greedier como The Forgotten.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE FORGOTTEN",
+        "BOSS",
+        "ULTRA GREEDIER",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Book of the Dead",
+      "howToUnlock": "Derrota a Delirium como The Forgotten.",
+      "version": "afterbirth_plus",
+      "category": "item",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE FORGOTTEN",
+        "BOSS",
+        "DELIRIUM"
+      ]
+    },
+    {
+      "displayName": "Bone Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como The Forgotten.",
+      "version": "afterbirth_plus",
+      "category": "co-op",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "THE FORGOTTEN",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Bound Baby",
+      "howToUnlock": "Derrota a Mega Satan como The Forgotten.",
+      "version": "afterbirth_plus",
+      "category": "co-op",
+      "character": "The Forgotten",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "THE FORGOTTEN",
+        "BOSS",
+        "MEGA SATAN"
       ]
     }
   ]
