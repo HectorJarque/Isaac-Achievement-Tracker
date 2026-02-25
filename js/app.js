@@ -56,7 +56,6 @@ async function fetchAndRenderAchievements(steamId) {
     if (data.error) throw new Error(data.error);
 
     allAchievements = data.achievements.map(steamAch => {
-      // Ahora buscamos por displayName, no por id interno
       const meta = getMeta(steamAch.displayName);
       return {
         id:           steamAch.id,
@@ -69,9 +68,10 @@ async function fetchAndRenderAchievements(steamId) {
         unlocktime:   steamAch.unlocktime,
         howToUnlock:  meta?.howToUnlock  || null,
         version:      meta?.version      || 'rebirth',
-        category:     meta?.category     || 'general',
+        category:     meta?.category     || 'item',
         character:    meta?.character    || null,
         secret:       meta?.secret       || false,
+        tags:         meta?.tags         || [],
         hasMeta:      !!meta,
       };
     });
@@ -146,36 +146,100 @@ function renderAchievements() {
   }
 }
 
+// ── TAG HELPERS ─────────────────────────────────────────────────────────────
+
+/**
+ * Genera el CSS slug para un tag concreto.
+ * Convierte "BOSS RUSH" → "tag-boss-rush", "???" → "tag-unk", etc.
+ */
+function tagSlug(tag) {
+  const map = {
+    'PERSONAJE':       'character',
+    'OBJETO':          'item',
+    'BOSS':            'boss',
+    'BOSS RUSH':       'boss-rush',
+    'DESAFÍO':         'challenge',
+    'ÁREA':            'area',
+    'CO-OP':           'coop',
+    'DONACIÓN':        'donation',
+    'TIENDA':          'shop',
+    'NO DAMAGE':       'nodamage',
+    'HARD MODE':       'hard',
+    'TRANSFORMACIÓN':  'transform',
+    'COLECCIÓN':       'collection',
+    'PROGRESIÓN':      'progression',
+    'DIFICULTAD':      'difficulty',
+    'COMPLETION MARKS':'completion',
+    'EXPLORACIÓN':     'explore',
+    'ANGEL ROOM':      'angel',
+    'DEVIL DEAL':      'devil',
+    'MUERTES':         'deaths',
+    'SECRETO':         'secret',
+    '100%':            'platinum',
+    '???':             'blubaby',
+    'ISAAC':           'chr-isaac',
+    'MAGDALENE':       'chr-magdalene',
+    'CAIN':            'chr-cain',
+    'JUDAS':           'chr-judas',
+    'EVE':             'chr-eve',
+    'SAMSON':          'chr-samson',
+    'AZAZEL':          'chr-azazel',
+    'LAZARUS':         'chr-lazarus',
+    'EDEN':            'chr-eden',
+    'THE LOST':        'chr-thelost',
+  };
+  return 'tag-' + (map[tag] || tag.toLowerCase().replace(/[^a-z0-9]/g, '-'));
+}
+
+function buildTagsHTML(ach) {
+  const tags = ach.tags && ach.tags.length > 0 ? ach.tags : [];
+
+  // Si no hay tags, fallback a category
+  if (tags.length === 0) {
+    return `<span class="card-tag tag-${ach.category}">${ach.category.toUpperCase()}</span>`;
+  }
+
+  // Máximo 4 tags en la card para no saturar
+  const visible = tags.slice(0, 4);
+  return visible.map(t =>
+    `<span class="card-tag ${tagSlug(t)}">${t}</span>`
+  ).join('');
+}
+
+function buildModalTagsHTML(ach) {
+  const tags = ach.tags && ach.tags.length > 0 ? ach.tags : [ach.category.toUpperCase()];
+  return tags.map(t =>
+    `<span class="meta-tag ${tagSlug(t)}">${t}</span>`
+  ).join('');
+}
+
+// ── CARD ────────────────────────────────────────────────────────────────────
+
 function createAchievementCard(ach) {
   const card = document.createElement('div');
   card.className = `achievement-card ${ach.achieved ? 'is-unlocked' : 'is-locked'} ${!ach.hasMeta ? 'steam-only' : ''}`;
 
   let iconHTML;
-  if (ach.achieved && ach.icon)     iconHTML = `<img class="card-icon" src="${ach.icon}" alt="" loading="lazy">`;
-  else if (ach.icongray)            iconHTML = `<img class="card-icon is-locked" src="${ach.icongray}" alt="" loading="lazy">`;
-  else                              iconHTML = `<div class="card-icon-placeholder">${ach.achieved ? '⭐' : '?'}</div>`;
-
-  // SIEMPRE mostramos el nombre real, nunca "???"
-  const displayName = ach.displayName;
+  if (ach.achieved && ach.icon)  iconHTML = `<img class="card-icon" src="${ach.icon}" alt="" loading="lazy">`;
+  else if (ach.icongray)         iconHTML = `<img class="card-icon is-locked" src="${ach.icongray}" alt="" loading="lazy">`;
+  else                           iconHTML = `<div class="card-icon-placeholder">${ach.achieved ? '⭐' : '?'}</div>`;
 
   let desc = ach.description && ach.description.trim() !== '' ? ach.description : null;
   if (!desc) desc = ach.howToUnlock ? ach.howToUnlock.substring(0, 70) + '...' : 'Haz clic para ver cómo desbloquear.';
 
-  let tagsHTML = `<span class="card-tag tag-${ach.category}">${ach.category.toUpperCase()}</span>`;
-  if (ach.secret)    tagsHTML += `<span class="card-tag tag-secret">SECRETO</span>`;
-  if (ach.character) tagsHTML += `<span class="card-tag tag-character">${ach.character}</span>`;
-
   card.innerHTML = `
     <div class="card-top">
       ${iconHTML}
-      <span class="card-name">${displayName}</span>
+      <span class="card-name">${ach.displayName}</span>
     </div>
     <p class="card-desc">${desc}</p>
-    <div class="card-footer">${tagsHTML}</div>`;
+    <div class="card-footer">${buildTagsHTML(ach)}</div>`;
 
   card.addEventListener('click', () => openModal(ach));
   return card;
 }
+
+// ── FILTROS ──────────────────────────────────────────────────────────────────
 
 function filterAchievements(achievements) {
   return achievements.filter(ach => {
@@ -185,8 +249,8 @@ function filterAchievements(achievements) {
     if (activeFilters.category !== 'all' && ach.category !== activeFilters.category) return false;
     if (activeFilters.search) {
       const q = activeFilters.search.toLowerCase();
-      if (![ach.displayName, ach.description, ach.howToUnlock, ach.character]
-            .some(s => (s || '').toLowerCase().includes(q))) return false;
+      const searchIn = [ach.displayName, ach.description, ach.howToUnlock, ach.character, ...(ach.tags || [])];
+      if (!searchIn.some(s => (s || '').toLowerCase().includes(q))) return false;
     }
     return true;
   });
@@ -222,6 +286,8 @@ function setupSearch() {
   });
 }
 
+// ── MODAL ────────────────────────────────────────────────────────────────────
+
 function setupModal() {
   document.getElementById('modalClose').addEventListener('click', closeModal);
   document.getElementById('modalOverlay').addEventListener('click', e => {
@@ -248,24 +314,29 @@ function openModal(ach) {
   if (ach.achieved) { statusEl.textContent = '✓ DESBLOQUEADO'; statusEl.className = 'modal-status unlocked'; }
   else              { statusEl.textContent = '✗ PENDIENTE';    statusEl.className = 'modal-status locked'; }
 
-  // Descripción: siempre real, nunca ocultamos
   const desc = (ach.description && ach.description.trim()) || 'Sin descripción de Steam.';
   document.getElementById('modalDesc').textContent = desc;
 
   const howEl = document.getElementById('modalHow');
   if (ach.howToUnlock) {
-    howEl.textContent  = ach.howToUnlock;
-    howEl.style.color  = '';
+    howEl.textContent = ach.howToUnlock;
+    howEl.style.color = '';
   } else {
-    howEl.textContent  = '⚠ Este logro aún no está en nuestra base de datos. Consulta la wiki oficial de Isaac: bindingofisaacrebirth.fandom.com/wiki/Achievements';
-    howEl.style.color  = 'var(--text-hint)';
+    howEl.textContent = '⚠ Este logro aún no está en nuestra base de datos. Consulta la wiki oficial: bindingofisaacrebirth.fandom.com/wiki/Achievements';
+    howEl.style.color = 'var(--text-hint)';
   }
 
-  document.getElementById('modalCategory').textContent = '📁 ' + (ach.category || 'general').toUpperCase();
-
-  const charEl = document.getElementById('modalCharacter');
-  if (ach.character) { charEl.textContent = '👤 ' + ach.character; charEl.style.display = 'inline'; }
-  else               { charEl.style.display = 'none'; }
+  // Tags en el modal (todos, sin límite)
+  const metaEl = document.getElementById('modalMeta');
+  if (metaEl) {
+    metaEl.innerHTML = buildModalTagsHTML(ach);
+  } else {
+    // Fallback para versiones anteriores del HTML
+    document.getElementById('modalCategory').textContent = '📁 ' + (ach.category || 'item').toUpperCase();
+    const charEl = document.getElementById('modalCharacter');
+    if (ach.character) { charEl.textContent = '👤 ' + ach.character; charEl.style.display = 'inline'; }
+    else               { charEl.style.display = 'none'; }
+  }
 
   const dateEl  = document.getElementById('modalDate');
   const dateStr = formatUnlockDate(ach.unlocktime);

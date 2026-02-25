@@ -1,173 +1,2219 @@
 {
-  "_info": "Logros de The Binding of Isaac indexados por displayName (exactamente como aparecen en Steam). Versiones: rebirth, afterbirth, afterbirth_plus, repentance, repentance_plus.",
+  "_info": "Logros de The Binding of Isaac: Rebirth indexados por displayName. Versión: rebirth.",
+  "_errors_detected": [
+    "Wrapped Baby (n°172): El JSON fuente fusionaba las condiciones de Azazel y Lazarus. Corregido: solo Azazel.",
+    "Begotten Baby (n°173): El JSON fuente fusionaba las condiciones de Lazarus y Azazel. Corregido: solo Lazarus.",
+    "Darkness Falls (n°157): El JSON fuente duplicaba/fusionaba el texto de condición. Corregido: 'Derrota a ??? como Eve'.",
+    "Suicide King desafío (n°160): El JSON fuente incluía 'Defeat Mom's Heart 11 times' erróneamente. La condición real es desbloquear a Lazarus.",
+    "Suicide King (n°120 vs n°160): Dos secretos del juego comparten el nombre 'Suicide King'. Pueden tener displayNames distintos en Steam. Verificar.",
+    "Blue Candle (n°59): La condición '900 monedas' puede ser incorrecta según la wiki. Verificar."
+  ],
   "achievements": [
-
-    {"displayName":"The D6","howToUnlock":"Completa The Chest (cofre final) con Isaac por primera vez.","version":"rebirth","category":"item","character":"Isaac","secret":false},
-    {"displayName":"The Polaroid","howToUnlock":"Derrota a Mom's Heart por decimoprimera vez. Aparecerá una foto en el suelo de la habitación final.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"The Negative","howToUnlock":"Derrota a Mom's Heart por decimoprimera vez con menos de 1 corazón de vida. Aparece la foto negativa en su lugar.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"The Womb","howToUnlock":"Derrota a Mom's Heart por primera vez para desbloquear el área The Womb.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Sheol","howToUnlock":"Derrota a Mom's Heart con el objeto The Negative para desbloquear Sheol.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"The Chest","howToUnlock":"Derrota a ??? (Blue Baby) con el objeto The Polaroid para desbloquear The Chest.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"The Dark Room","howToUnlock":"Derrota a Satan con el objeto The Negative para desbloquear The Dark Room.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Blue Baby","howToUnlock":"Derrota a Mom's Heart 10 veces (con cualquier personaje) para desbloquear a ??? como personaje jugable.","version":"rebirth","category":"character","character":"???","secret":false},
-    {"displayName":"The Lost","howToUnlock":"Secuencia específica de muertes: 1) Muere con Isaac en Basement atacado por un Monstro II. 2) Muere con Magdalene en Caves/Catacombs con un Gaper. 3) Muere con Judas en Depths/Necropolis con Mom. 4) Muere con Azazel en Sheol con Satan. Luego encontrarás a The Lost disponible.","version":"rebirth","category":"character","character":"The Lost","secret":true},
-    {"displayName":"Magdalene Unlocked","howToUnlock":"Consigue 7 corazones de vida en una sola partida. Magdalene se desbloquea automáticamente.","version":"rebirth","category":"character","character":"Magdalene","secret":false},
-    {"displayName":"Cain Unlocked","howToUnlock":"Recoge 55 monedas en una sola partida. Cain se desbloquea automáticamente.","version":"rebirth","category":"character","character":"Cain","secret":false},
-    {"displayName":"Judas Unlocked","howToUnlock":"Recoge 3 libros en una sola partida. Judas se desbloquea automáticamente.","version":"rebirth","category":"character","character":"Judas","secret":false},
-    {"displayName":"Eve Unlocked","howToUnlock":"Muere dos veces sin recoger ningún corazón. Eve se desbloquea automáticamente.","version":"rebirth","category":"character","character":"Eve","secret":false},
-    {"displayName":"Samson Unlocked","howToUnlock":"Lleva 0 monedas, 0 bombas y 0 llaves al completar el Basement I. Samson se desbloquea.","version":"rebirth","category":"character","character":"Samson","secret":false},
-    {"displayName":"Azazel Unlocked","howToUnlock":"Haz 3 tratos con el diablo (devil deals) en una sola partida. Azazel se desbloquea.","version":"rebirth","category":"character","character":"Azazel","secret":false},
-    {"displayName":"Lazarus Unlocked","howToUnlock":"Acumula 4 pastillas de vida extra (1-Up Pills) en una sola partida. Lazarus se desbloquea.","version":"rebirth","category":"character","character":"Lazarus","secret":false},
-    {"displayName":"Eden Unlocked","howToUnlock":"Derrota a Mom 5 veces en total (con cualquier personaje). Eden se desbloquea.","version":"rebirth","category":"character","character":"Eden","secret":false},
-    {"displayName":"Isaac Unlocked","howToUnlock":"Derrota a Mom con todos los personajes base para desbloquear a Isaac como personaje (si usas la versión con Rebirth). En Repentance, Isaac está disponible desde el inicio.","version":"rebirth","category":"character","character":"Isaac","secret":false},
-
-    {"displayName":"Mom Completion Mark","howToUnlock":"Derrota a Mom con cualquier personaje en modo Normal.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Mom's Heart Completion Mark","howToUnlock":"Derrota a Mom's Heart (o It Lives!) con cualquier personaje en modo Normal.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Satan Completion Mark","howToUnlock":"Derrota a Satan con cualquier personaje en modo Normal.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"??? Completion Mark","howToUnlock":"Derrota a ??? (Blue Baby) en The Chest con cualquier personaje en modo Normal.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"The Lamb Completion Mark","howToUnlock":"Derrota a The Lamb en The Dark Room con cualquier personaje en modo Normal.","version":"rebirth","category":"general","character":null,"secret":false},
-
-    {"displayName":"Judas's Shadow","howToUnlock":"Derrota a Satan con Judas. Desbloquea el objeto Judas's Shadow.","version":"rebirth","category":"item","character":"Judas","secret":false},
-    {"displayName":"Lazarus' Rags","howToUnlock":"Derrota a Mom's Heart (o It Lives!) con Lazarus. Desbloquea el objeto Lazarus' Rags.","version":"rebirth","category":"item","character":"Lazarus","secret":false},
-    {"displayName":"Whore of Babylon","howToUnlock":"Derrota a Satan con Eve. Desbloquea el objeto Whore of Babylon (ya disponible, mejora sus condiciones de activación).","version":"rebirth","category":"item","character":"Eve","secret":false},
-    {"displayName":"The Pact","howToUnlock":"Derrota a Satan con Azazel. Desbloquea el objeto The Pact.","version":"rebirth","category":"item","character":"Azazel","secret":false},
-    {"displayName":"Divorce Papers","howToUnlock":"Derrota a Isaac (The Chest) con Cain. Desbloquea el objeto Divorce Papers.","version":"rebirth","category":"item","character":"Cain","secret":false},
-    {"displayName":"Maggy's Bow","howToUnlock":"Derrota a Isaac (The Chest) con Magdalene. Desbloquea el objeto Maggy's Bow.","version":"rebirth","category":"item","character":"Magdalene","secret":false},
-    {"displayName":"Isaac's Heart","howToUnlock":"Derrota a Isaac (The Chest) con Isaac. Desbloquea el objeto Isaac's Heart.","version":"rebirth","category":"item","character":"Isaac","secret":false},
-
-    {"displayName":"Pot Lord","howToUnlock":"Destruye 100 ollas (pots) a lo largo de múltiples partidas.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Spelunker Boy","howToUnlock":"Encuentra y entra en 20 habitaciones secretas (Secret Rooms) a lo largo de múltiples partidas.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Everything is Terrible!!!","howToUnlock":"Completa el juego (derrota a Mom's Heart) en modo Difícil.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Everything is Terrible 2!!!","howToUnlock":"Completa el juego (derrota a Mom's Heart) en modo Difícil con un segundo personaje.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Gut Wrencher","howToUnlock":"Derrota a Gurdy Jr. teniendo todos los corazones de vida completamente llenos.","version":"rebirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"Isaac's Awakening","howToUnlock":"Derrota a Mom sin haber recogido ningún objeto durante toda la partida.","version":"rebirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"High Brow","howToUnlock":"Usa 5 bombas en una sola planta.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Dead Boy","howToUnlock":"Muere 10 veces. (Se desbloquea acumulativamente entre partidas.)","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Darkness Falls","howToUnlock":"Derrota a Mom con un personaje al que hayas completado todos los jefes menores previos.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Oops!","howToUnlock":"Activa el objeto Forget Me Now o llega al final del juego 10 veces. Desbloquea el objeto Forget Me Now en los cofres del juego.","version":"rebirth","category":"item","character":null,"secret":false},
-    {"displayName":"When Life Gives You Lemons","howToUnlock":"Recoge 10 monedas de 1 centavo (Pennies) en una sola planta.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Waka Waka","howToUnlock":"Completa 4 salas de desafío (Challenge Rooms) en una sola partida.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"It's in the Cards","howToUnlock":"Usa 5 cartas o runas en una sola partida.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Two of a Kind","howToUnlock":"Recoge 2 del mismo objeto pasivo en una sola partida.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"I'm Excited!!!!","howToUnlock":"Completa Afterbirth Greed Mode con cualquier personaje.","version":"rebirth","category":"general","character":null,"secret":false},
-
-    {"displayName":"Greed!","howToUnlock":"Completa Greed Mode por primera vez (derrota a Ultra Greed con cualquier personaje).","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Greeder!","howToUnlock":"Completa Greed Mode en modo Hard (Greedier) con cualquier personaje.","version":"rebirth","category":"general","character":null,"secret":false},
-
-    {"displayName":"Karma","howToUnlock":"Dona a 4 máquinas de mendigo (Donation Machines) en una sola partida.","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"The Tax Man","howToUnlock":"Recoge más de 10 monedas al abrir un cofre de oro (Golden Chest).","version":"rebirth","category":"general","character":null,"secret":false},
-    {"displayName":"Speed! Round 1","howToUnlock":"Completa la primera planta (Basement I o Cellar I) en menos de 1 minuto.","version":"rebirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"Speed! Round 2","howToUnlock":"Completa las primeras dos plantas en menos de 2 minutos.","version":"rebirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"No Dew","howToUnlock":"Completa el juego sin recoger ninguna recarga de alma (Soul Charge).","version":"rebirth","category":"challenge","character":null,"secret":false},
-
-    {"displayName":"Lilith Unlocked","howToUnlock":"Completa Greed Mode con Azazel. Lilith se desbloquea como personaje jugable.","version":"afterbirth","category":"character","character":"Lilith","secret":false},
-    {"displayName":"Keeper Unlocked","howToUnlock":"Dona 1000 monedas en total a las máquinas de donación de Greed Mode a lo largo de múltiples partidas. Keeper se desbloquea.","version":"afterbirth","category":"character","character":"Keeper","secret":true},
-    {"displayName":"Hush!","howToUnlock":"Llega a Mom's Heart en menos de 30 minutos para que aparezca el Blue Womb (??). Derrota a Hush dentro.","version":"afterbirth","category":"general","character":null,"secret":false},
-    {"displayName":"The Void","howToUnlock":"Derrota a Hush por primera vez. The Void se desbloquea como zona final.","version":"afterbirth","category":"general","character":null,"secret":false},
-    {"displayName":"Delirium","howToUnlock":"Derrota a Delirium en The Void. (Primero debes desbloquear The Void derrotando a Hush.)","version":"afterbirth","category":"general","character":null,"secret":false},
-    {"displayName":"It Lives!","howToUnlock":"Derrota a Mom's Heart 11 veces. A partir de ese momento Mom's Heart se convierte en It Lives! al luchar contra ella.","version":"afterbirth","category":"general","character":null,"secret":false},
-    {"displayName":"Mega Satan","howToUnlock":"Usa la llave dorada (Golden Key) y la llave negra (Black Key) para abrir la puerta gigante de The Chest o The Dark Room. Derrota a Mega Satan dentro.","version":"afterbirth","category":"general","character":null,"secret":false},
-    {"displayName":"Hush Completion Mark","howToUnlock":"Derrota a Hush (Blue Womb) con cualquier personaje en modo Normal.","version":"afterbirth","category":"general","character":null,"secret":false},
-    {"displayName":"Mega Satan Completion Mark","howToUnlock":"Derrota a Mega Satan con cualquier personaje en modo Normal.","version":"afterbirth","category":"general","character":null,"secret":false},
-    {"displayName":"Lilith's Locket","howToUnlock":"Derrota a Isaac (The Chest) con Lilith. Desbloquea el trinket Lilith's Locket.","version":"afterbirth","category":"item","character":"Lilith","secret":false},
-    {"displayName":"Keeper's Sack","howToUnlock":"Derrota a Satan con Keeper. Desbloquea el objeto Keeper's Sack.","version":"afterbirth","category":"item","character":"Keeper","secret":false},
-    {"displayName":"Keeper's Bargain","howToUnlock":"Derrota a ??? (Blue Baby) con Keeper. Desbloquea el objeto Keeper's Bargain.","version":"afterbirth","category":"item","character":"Keeper","secret":false},
-    {"displayName":"Schoolbag","howToUnlock":"Derrota a Mom con Lilith. Desbloquea el objeto Schoolbag.","version":"afterbirth","category":"item","character":"Lilith","secret":false},
-    {"displayName":"Incubus","howToUnlock":"Derrota a Mom's Heart (o It Lives!) con Lilith. Desbloquea el objeto Incubus.","version":"afterbirth","category":"item","character":"Lilith","secret":false},
-    {"displayName":"Dead Cat","howToUnlock":"Completa el desafío Cat Got Your Tongue. Desbloquea Dead Cat en los cofres.","version":"afterbirth","category":"item","character":null,"secret":false},
-    {"displayName":"Milk!","howToUnlock":"Completa el desafío Milk! para desbloquear la carta Milk!","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"Aprils Fool","howToUnlock":"Completa el desafío Aprils Fool para desbloquear el objeto correspondiente.","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"Speed!","howToUnlock":"Completa el desafío Speed! (derrota a Mom en menos de 8 minutos sin ralentizarte).","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"Solar System","howToUnlock":"Completa el desafío Solar System (empieza con Distant Admiration, Forever Alone y Fan of Knives, derrota a Mom).","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"Flat Stanley","howToUnlock":"Completa el desafío Flat Stanley (empieza con items que encogen a Isaac, derrota a Mom).","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"Ultra Hard","howToUnlock":"Completa el desafío Ultra Hard (modo muy difícil, sin items al empezar, debes completar el juego entero).","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"Brains!","howToUnlock":"Completa el desafío Brains! (empieza como zombie con ítems concretos, derrota a Mom).","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"Head Trauma","howToUnlock":"Completa el desafío Head Trauma (empieza con ítems que cambian tu disparo, derrota a Mom).","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"Glass Cannon","howToUnlock":"Completa el desafío Glass Cannon (empiezas con Glass Cannon como único item, puedes morir con un golpe).","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"When Life Gives You Lemons...","howToUnlock":"Completa el desafío When Life Gives You Lemons (empieza sin corazones rojos, solo almas).","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"Euthanasia","howToUnlock":"Completa el desafío Euthanasia (empieza con Cursed Eye y Epic Fetus, derrota a Mom).","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"Clastrophobia","howToUnlock":"Completa el desafío Clastrophobia (todas las puertas se cierran, derrota a Mom).","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"Demo Man","howToUnlock":"Completa el desafío Demo Man (solo puedes usar bombas, empieza con Dr. Fetus).","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"PRIDE DAY!","howToUnlock":"Completa el desafío PRIDE DAY! (empieza con corazones de arcoíris, derrota a Mom).","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"Cantripped!","howToUnlock":"Completa el desafío Cantripped! (empieza con el hechizo activo, derrota a Mom).","version":"afterbirth","category":"challenge","character":null,"secret":false},
-    {"displayName":"The Guardian","howToUnlock":"Completa el desafío The Guardian (empieza con Shade y Spear of Destiny, derrota a Mom).","version":"afterbirth","category":"challenge","character":null,"secret":false},
-
-    {"displayName":"Apollyon Unlocked","howToUnlock":"Derrota a Mega Satan por primera vez (con cualquier personaje). Apollyon se desbloquea.","version":"afterbirth_plus","category":"character","character":"Apollyon","secret":false},
-    {"displayName":"The Forgotten Unlocked","howToUnlock":"Secuencia compleja: 1) Debes haber completado el juego con todos los personajes. 2) Mata a Mom con la Broken Shovel después de haberla encontrado dos veces seguidas. La wiki oficial tiene los pasos detallados.","version":"afterbirth_plus","category":"character","character":"The Forgotten","secret":true},
-    {"displayName":"Greedier!","howToUnlock":"Completa Greedier Mode (versión difícil de Greed Mode) con cualquier personaje. Se desbloquea después de completar Greed Mode con todos los personajes.","version":"afterbirth_plus","category":"general","character":null,"secret":false},
-    {"displayName":"Delirium Completion Mark","howToUnlock":"Derrota a Delirium en The Void con cualquier personaje en modo Normal.","version":"afterbirth_plus","category":"general","character":null,"secret":false},
-    {"displayName":"Void Item","howToUnlock":"Derrota a Delirium con Apollyon. Desbloquea el objeto Void.","version":"afterbirth_plus","category":"item","character":"Apollyon","secret":false},
-    {"displayName":"Forgotten Lullaby","howToUnlock":"Derrota a Mom's Heart (o It Lives!) con The Forgotten. Desbloquea el objeto Forgotten Lullaby.","version":"afterbirth_plus","category":"item","character":"The Forgotten","secret":false},
-    {"displayName":"Bone Spurs","howToUnlock":"Derrota a Mom con The Forgotten. Desbloquea el objeto Bone Spurs.","version":"afterbirth_plus","category":"item","character":"The Forgotten","secret":false},
-    {"displayName":"BFFs!","howToUnlock":"Completa el desafío BFFs! (empieza con varios familiar items, derrota a Mom).","version":"afterbirth_plus","category":"challenge","character":null,"secret":false},
-    {"displayName":"Beans!","howToUnlock":"Completa el desafío Beans! (empieza con Butt Bombs y otros items de gas, derrota a Mom).","version":"afterbirth_plus","category":"challenge","character":null,"secret":false},
-    {"displayName":"It's in the Cards","howToUnlock":"Completa el desafío It's in the Cards (empieza con muchas cartas, derrota a Mom).","version":"afterbirth_plus","category":"challenge","character":null,"secret":false},
-    {"displayName":"Waka Waka","howToUnlock":"Completa el desafío Waka Waka (empieza con varios items circulares/especiales, derrota a Mom).","version":"afterbirth_plus","category":"challenge","character":null,"secret":false},
-    {"displayName":"Slow Roll","howToUnlock":"Completa el desafío Slow Roll (empieza con Butter Bean y otros items, derrota a Mom).","version":"afterbirth_plus","category":"challenge","character":null,"secret":false},
-    {"displayName":"The Thief","howToUnlock":"Completa el desafío The Thief (empieza con Smelter y otros ítems, derrota a Mom).","version":"afterbirth_plus","category":"challenge","character":null,"secret":false},
-
-    {"displayName":"Bethany Unlocked","howToUnlock":"Completa el Ascent (el camino de regreso) con Lazarus. Bethany se desbloquea.","version":"repentance","category":"character","character":"Bethany","secret":false},
-    {"displayName":"Jacob and Esau Unlocked","howToUnlock":"Completa el Ascent con Isaac. Jacob & Esau se desbloquean.","version":"repentance","category":"character","character":"Jacob & Esau","secret":false},
-    {"displayName":"Tainted Isaac Unlocked","howToUnlock":"Encuentra a Tainted Isaac en la habitación secreta del Ascent. Mira detrás de la puerta que necesita la Cracked Key.","version":"repentance","category":"character","character":"Tainted Isaac","secret":false},
-    {"displayName":"Tainted Magdalene Unlocked","howToUnlock":"Encuentra a Tainted Magdalene en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted Magdalene","secret":false},
-    {"displayName":"Tainted Cain Unlocked","howToUnlock":"Encuentra a Tainted Cain en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted Cain","secret":false},
-    {"displayName":"Tainted Judas Unlocked","howToUnlock":"Encuentra a Tainted Judas en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted Judas","secret":false},
-    {"displayName":"Tainted Blue Baby Unlocked","howToUnlock":"Encuentra a Tainted ??? (Blue Baby) en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted ???","secret":false},
-    {"displayName":"Tainted Eve Unlocked","howToUnlock":"Encuentra a Tainted Eve en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted Eve","secret":false},
-    {"displayName":"Tainted Samson Unlocked","howToUnlock":"Encuentra a Tainted Samson en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted Samson","secret":false},
-    {"displayName":"Tainted Azazel Unlocked","howToUnlock":"Encuentra a Tainted Azazel en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted Azazel","secret":false},
-    {"displayName":"Tainted Lazarus Unlocked","howToUnlock":"Encuentra a Tainted Lazarus en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted Lazarus","secret":false},
-    {"displayName":"Tainted Eden Unlocked","howToUnlock":"Encuentra a Tainted Eden en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted Eden","secret":false},
-    {"displayName":"Tainted Lost Unlocked","howToUnlock":"Encuentra a Tainted Lost en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted Lost","secret":false},
-    {"displayName":"Tainted Lilith Unlocked","howToUnlock":"Encuentra a Tainted Lilith en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted Lilith","secret":false},
-    {"displayName":"Tainted Keeper Unlocked","howToUnlock":"Encuentra a Tainted Keeper en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted Keeper","secret":false},
-    {"displayName":"Tainted Apollyon Unlocked","howToUnlock":"Encuentra a Tainted Apollyon en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted Apollyon","secret":false},
-    {"displayName":"Tainted Forgotten Unlocked","howToUnlock":"Encuentra a Tainted The Forgotten en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted The Forgotten","secret":false},
-    {"displayName":"Tainted Bethany Unlocked","howToUnlock":"Encuentra a Tainted Bethany en la habitación secreta del Ascent.","version":"repentance","category":"character","character":"Tainted Bethany","secret":false},
-    {"displayName":"Tainted Jacob Unlocked","howToUnlock":"Encuentra a Tainted Jacob en la habitación secreta del Ascent. Este personaje inicia sin items y con una maldición severa (Dark Esau lo persigue).","version":"repentance","category":"character","character":"Tainted Jacob","secret":true},
-
-    {"displayName":"Mother","howToUnlock":"Abre la trampa en Mausoleum II (zona alternativa de Depths en Repentance) y llega a la Corpse. Derrota a Mother al final de la Corpse II.","version":"repentance","category":"general","character":null,"secret":false},
-    {"displayName":"Dogma","howToUnlock":"Completa el Ascent (regresa desde el fondo del mapa hacia Home) y derrota a Dogma justo antes de llegar a Home.","version":"repentance","category":"general","character":null,"secret":false},
-    {"displayName":"The Beast","howToUnlock":"Derrota a Dogma y luego a The Beast en la zona Home al final del Ascent.","version":"repentance","category":"general","character":null,"secret":true},
-    {"displayName":"Mother Completion Mark","howToUnlock":"Derrota a Mother con cualquier personaje en modo Normal.","version":"repentance","category":"general","character":null,"secret":false},
-    {"displayName":"Beast Completion Mark","howToUnlock":"Derrota a The Beast con cualquier personaje en modo Normal.","version":"repentance","category":"general","character":null,"secret":false},
-    {"displayName":"Ultra Greed Completion Mark","howToUnlock":"Derrota a Ultra Greed en Greed Mode con cualquier personaje en modo Normal.","version":"repentance","category":"general","character":null,"secret":false},
-    {"displayName":"Ultra Greedier Completion Mark","howToUnlock":"Derrota a Ultra Greedier en Greedier Mode con cualquier personaje en modo Normal.","version":"repentance","category":"general","character":null,"secret":false},
-
-    {"displayName":"Birthright","howToUnlock":"Desbloquea el objeto Birthright completando el juego con Bethany o con Jacob & Esau (varía según el personaje).","version":"repentance","category":"item","character":null,"secret":false},
-    {"displayName":"Blood Oath","howToUnlock":"Derrota a Mom con Bethany. Desbloquea el objeto Blood Oath.","version":"repentance","category":"item","character":"Bethany","secret":false},
-    {"displayName":"Book of Virtues","howToUnlock":"Derrota a Mom's Heart (o It Lives!) con Bethany. Desbloquea el objeto Book of Virtues.","version":"repentance","category":"item","character":"Bethany","secret":false},
-    {"displayName":"Esau Jr.","howToUnlock":"Derrota a Mom con Jacob & Esau. Desbloquea el objeto Esau Jr.","version":"repentance","category":"item","character":"Jacob & Esau","secret":false},
-    {"displayName":"Anima Sola","howToUnlock":"Derrota a Mom's Heart (o It Lives!) con Jacob & Esau. Desbloquea el objeto Anima Sola.","version":"repentance","category":"item","character":"Jacob & Esau","secret":false},
-    {"displayName":"Isaac's Tomb","howToUnlock":"Derrota a The Beast con Isaac. Desbloquea Isaac's Tomb.","version":"repentance","category":"item","character":"Isaac","secret":false},
-    {"displayName":"Recall","howToUnlock":"Completa el Ascent con Tainted Isaac. Desbloquea el objeto Recall.","version":"repentance","category":"item","character":"Tainted Isaac","secret":false},
-    {"displayName":"Bag of Crafting","howToUnlock":"Derrota a Mom con Tainted Cain. Desbloquea el objeto Bag of Crafting.","version":"repentance","category":"item","character":"Tainted Cain","secret":false},
-    {"displayName":"Dark Arts","howToUnlock":"Derrota a Mom con Tainted Judas. Desbloquea el objeto Dark Arts.","version":"repentance","category":"item","character":"Tainted Judas","secret":false},
-    {"displayName":"Sumptorium","howToUnlock":"Derrota a Mom con Tainted ???. Desbloquea el objeto Sumptorium.","version":"repentance","category":"item","character":"Tainted ???","secret":false},
-    {"displayName":"Berserk!","howToUnlock":"Derrota a Mom con Tainted Samson. Desbloquea el objeto Berserk!","version":"repentance","category":"item","character":"Tainted Samson","secret":false},
-    {"displayName":"Abyss","howToUnlock":"Derrota a Mom con Tainted Apollyon. Desbloquea el objeto Abyss.","version":"repentance","category":"item","character":"Tainted Apollyon","secret":false},
-    {"displayName":"Redemption","howToUnlock":"Derrota a Mom con Tainted Lost. Desbloquea el objeto Redemption.","version":"repentance","category":"item","character":"Tainted Lost","secret":false},
-    {"displayName":"Lemegeton","howToUnlock":"Derrota a Mom con Tainted Lazarus. Desbloquea el objeto Lemegeton.","version":"repentance","category":"item","character":"Tainted Lazarus","secret":false},
-    {"displayName":"Tmesis","howToUnlock":"Derrota a Mom con Tainted Bethany. Desbloquea el objeto Tmesis.","version":"repentance","category":"item","character":"Tainted Bethany","secret":false},
-    {"displayName":"Suplex!","howToUnlock":"Derrota a Mom con Tainted Magdalene. Desbloquea el objeto Suplex!","version":"repentance","category":"item","character":"Tainted Magdalene","secret":false},
-
-    {"displayName":"Teratoma","howToUnlock":"Completa el desafío Teratoma en Repentance (empieza con varios ítems de tumores/cambiantes, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"Invisible Man","howToUnlock":"Completa el desafío Invisible Man (empieza invisible y con ítems relacionados, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"Computer Savvy","howToUnlock":"Completa el desafío Computer Savvy (empieza con ítems tecnológicos, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"Suicide King","howToUnlock":"Completa el desafío Suicide King (empieza con Kamikaze! y otros ítems de auto-daño, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"Cat Got Your Tongue","howToUnlock":"Completa el desafío Cat Got Your Tongue (empieza con Guppy's Hairball y ítems de Guppy).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"Flooded Caves","howToUnlock":"Completa el desafío Flooded Caves (las Caves están inundadas, empieza con ítems acuáticos, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"Scat Man","howToUnlock":"Completa el desafío Scat Man (empieza con ítems de excrementos/poison, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"Bloody Mary","howToUnlock":"Completa el desafío Bloody Mary (empieza con ítems de sangre/daño propio, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"Cursed!","howToUnlock":"Completa el desafío Cursed! (cada planta tiene una maldición aleatoria, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"Pitch Black","howToUnlock":"Completa el desafío Pitch Black (total oscuridad en las habitaciones, empieza sin ítems de visión, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"RGB Baby","howToUnlock":"Completa el desafío RGB Baby (empieza con ítems de colores/rotación, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"Seeing Double","howToUnlock":"Completa el desafío Seeing Double (todos los enemigos aparecen duplicados, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"Pong","howToUnlock":"Completa el desafío Pong (empieza con Kidney Stone y otros ítems de rebote, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"Baptism by Fire","howToUnlock":"Completa el desafío Baptism by Fire (empieza con Fireball y ítems de fuego, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"The Lost Child","howToUnlock":"Completa el desafío The Lost Child (juegas como The Lost pero con ítems potentes, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"aprils fool","howToUnlock":"Completa el desafío Aprils Fool (los objetos están intercambiados/engañosos, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"Onan's Streak","howToUnlock":"Completa el desafío Onan's Streak (empieza con Brimstone y ítems especiales, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false},
-    {"displayName":"The Purist","howToUnlock":"Completa el desafío The Purist (sin items del diablo ni ángel, solo tiendas y baúles, derrota a Mom).","version":"repentance","category":"challenge","character":null,"secret":false}
+    {
+      "displayName": "Magdalene",
+      "howToUnlock": "Ten 7 o más contenedores de corazón rojo al mismo tiempo.",
+      "version": "rebirth",
+      "category": "character",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "MAGDALENE"
+      ]
+    },
+    {
+      "displayName": "Cain",
+      "howToUnlock": "Acumula 55 monedas al mismo tiempo.",
+      "version": "rebirth",
+      "category": "character",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "CAIN"
+      ]
+    },
+    {
+      "displayName": "Judas",
+      "howToUnlock": "Derrota a Satan.",
+      "version": "rebirth",
+      "category": "character",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "JUDAS",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Eve",
+      "howToUnlock": "No recojas ningún corazón durante 2 plantas consecutivas.",
+      "version": "rebirth",
+      "category": "character",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "EVE"
+      ]
+    },
+    {
+      "displayName": "Samson",
+      "howToUnlock": "Completa 2 plantas seguidas sin recibir daño.",
+      "version": "rebirth",
+      "category": "character",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "SAMSON",
+        "NO DAMAGE"
+      ]
+    },
+    {
+      "displayName": "Azazel",
+      "howToUnlock": "Haz 3 tratos con el Diablo en una misma partida.",
+      "version": "rebirth",
+      "category": "character",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "AZAZEL",
+        "DEVIL DEAL"
+      ]
+    },
+    {
+      "displayName": "Lazarus",
+      "howToUnlock": "Ten 4 o más corazones de alma al mismo tiempo.",
+      "version": "rebirth",
+      "category": "character",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "LAZARUS"
+      ]
+    },
+    {
+      "displayName": "Eden",
+      "howToUnlock": "Completa el Capítulo 4 (derrota a Mom's Heart).",
+      "version": "rebirth",
+      "category": "character",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "EDEN"
+      ]
+    },
+    {
+      "displayName": "???",
+      "howToUnlock": "Derrota a Mom's Heart 10 veces (con cualquier personaje).",
+      "version": "rebirth",
+      "category": "character",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "???"
+      ]
+    },
+    {
+      "displayName": "The Lost",
+      "howToUnlock": "Muere en una Sacrifice Room mientras llevas el objeto Missing Poster. (Requiere haber completado antes la secuencia de muertes: Isaac en Basement con Monstro, Magdalene en Caves con Gaper, Judas en Depths ante Mom, Azazel en Sheol ante Satan.)",
+      "version": "rebirth",
+      "category": "character",
+      "character": "The Lost",
+      "secret": true,
+      "tags": [
+        "PERSONAJE",
+        "THE LOST",
+        "SECRETO"
+      ]
+    },
+    {
+      "displayName": "The Womb",
+      "howToUnlock": "Derrota a Mom por primera vez para desbloquear el área The Womb.",
+      "version": "rebirth",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Harbingers",
+      "howToUnlock": "Derrota a Mom para desbloquear a los Jinetes del Apocalipsis como jefes.",
+      "version": "rebirth",
+      "category": "boss",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Cellar",
+      "howToUnlock": "Derrota a todos los jefes del Basement (excepto Baby Plum).",
+      "version": "rebirth",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Catacombs",
+      "howToUnlock": "Derrota a todos los jefes de las Caves (excepto Bumbino).",
+      "version": "rebirth",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Necropolis",
+      "howToUnlock": "Derrota a todos los jefes de las Depths (excepto Reap Creep).",
+      "version": "rebirth",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "It Lives!",
+      "howToUnlock": "Derrota a Mom's Heart 11 veces para transformarla en It Lives!",
+      "version": "rebirth",
+      "category": "boss",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "BOSS",
+        "PROGRESIÓN"
+      ]
+    },
+    {
+      "displayName": "Everything Is Terrible!!!",
+      "howToUnlock": "Derrota a Mom's Heart 5 veces para aumentar la dificultad del juego.",
+      "version": "rebirth",
+      "category": "progression",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "PROGRESIÓN",
+        "DIFICULTAD"
+      ]
+    },
+    {
+      "displayName": "Angels",
+      "howToUnlock": "Completa el Capítulo 6 (llega a The Chest o Dark Room).",
+      "version": "rebirth",
+      "category": "boss",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "BOSS",
+        "ÁREA"
+      ]
+    },
+    {
+      "displayName": "Something From The Future",
+      "howToUnlock": "Completa el Capítulo 1 (Basement/Cellar) 40 veces para desbloquear un nuevo jefe.",
+      "version": "rebirth",
+      "category": "boss",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "BOSS",
+        "PROGRESIÓN"
+      ]
+    },
+    {
+      "displayName": "Something Cute",
+      "howToUnlock": "Completa el Capítulo 2 (Caves/Catacombs) 30 veces para desbloquear un nuevo jefe.",
+      "version": "rebirth",
+      "category": "boss",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "BOSS",
+        "PROGRESIÓN"
+      ]
+    },
+    {
+      "displayName": "Something Sticky",
+      "howToUnlock": "Completa el Capítulo 3 (Depths/Necropolis) 20 veces para desbloquear un nuevo jefe.",
+      "version": "rebirth",
+      "category": "boss",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "BOSS",
+        "PROGRESIÓN"
+      ]
+    },
+    {
+      "displayName": "Something Icky",
+      "howToUnlock": "Derrota a Isaac 10 veces para desbloquear un nuevo jefe en The Womb.",
+      "version": "rebirth",
+      "category": "boss",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "BOSS",
+        "PROGRESIÓN"
+      ]
+    },
+    {
+      "displayName": "A Forgotten Horseman",
+      "howToUnlock": "Recoge 10 objetos de salas de Ángel para desbloquear un nuevo jefe.",
+      "version": "rebirth",
+      "category": "boss",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "BOSS",
+        "ANGEL ROOM"
+      ]
+    },
+    {
+      "displayName": "Krampus",
+      "howToUnlock": "Recoge 20 objetos de salas del Diablo para desbloquear a Krampus como minijefe.",
+      "version": "rebirth",
+      "category": "boss",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "BOSS",
+        "DEVIL DEAL"
+      ]
+    },
+    {
+      "displayName": "A Cube of Meat",
+      "howToUnlock": "Derrota a Mom (también desbloquea Ball of Bandages).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Book of Revelations",
+      "howToUnlock": "Derrota a cualquier Jinete del Apocalipsis (Harbinger).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "A Noose",
+      "howToUnlock": "Derrota a Mom's Heart 3 veces.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Nail",
+      "howToUnlock": "Completa el Boss Rush como Azazel.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "AZAZEL",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "A Quarter",
+      "howToUnlock": "Derrota a Mom's Heart 8 veces.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "A Fetus in a Jar",
+      "howToUnlock": "Derrota a Mom's Heart 9 veces.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "A Small Rock",
+      "howToUnlock": "Destruye 100 Tinted Rocks (rocas con una X dibujada).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Monstro's Tooth",
+      "howToUnlock": "Completa el Capítulo 1 (derrota al jefe del Basement).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Lil' Chubby",
+      "howToUnlock": "Completa el Capítulo 2 (derrota al jefe de las Caves).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Loki's Horns",
+      "howToUnlock": "Derrota a Lokii.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "A Bandage",
+      "howToUnlock": "Crea a Super Bandage Girl recogiendo 4 copias de Ball of Bandages en una misma partida.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "A Cross",
+      "howToUnlock": "Derrota a Isaac como Magdalene.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "MAGDALENE",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "A Bag of Pennies",
+      "howToUnlock": "Derrota a Isaac como Cain.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "CAIN",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Book of Sin",
+      "howToUnlock": "Derrota a los 7 Pecados Capitales (Deadly Sins) en una misma partida.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Little Gish",
+      "howToUnlock": "Derrota a Gish.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Little Steven",
+      "howToUnlock": "Derrota a Steven.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Little C.H.A.D.",
+      "howToUnlock": "Derrota a C.H.A.D.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "A Gamekid",
+      "howToUnlock": "Visita 10 Arcades en total (a lo largo de varias partidas).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "A Halo",
+      "howToUnlock": "Derrota a Mom, Mom's Heart o It Lives! usando The Bible o la carta XV - The Devil.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Mr. Mega",
+      "howToUnlock": "Destruye 10 Tinted Rocks (rocas con una X dibujada).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "The D6",
+      "howToUnlock": "Derrota a Isaac (jefe de la Catedral) como ??? (Blue Baby).",
+      "version": "rebirth",
+      "category": "item",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "???",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Scissors",
+      "howToUnlock": "Muere 100 veces en total (a lo largo de varias partidas).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "MUERTES"
+      ]
+    },
+    {
+      "displayName": "The Parasite",
+      "howToUnlock": "Recoge 2 objetos con la etiqueta 'dead' en una misma partida (Bob's Rotten Head, Dead Cat, Cricket's Head, Tammy's Head).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "Mom's Contact",
+      "howToUnlock": "Obtén 3 objetos de tipo 'Yes Mother?' en una misma partida.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "The Necronomicon",
+      "howToUnlock": "Usa la carta XIII - Death 4 veces en total.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO"
+      ]
+    },
+    {
+      "displayName": "Mom's Knife",
+      "howToUnlock": "Derrota a Satan como Isaac.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "ISAAC",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Razor",
+      "howToUnlock": "Derrota a Satan como Eve.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EVE",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Guardian Angel",
+      "howToUnlock": "Derrota a Satan como Magdalene.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "MAGDALENE",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "A Bag of Bombs",
+      "howToUnlock": "Derrota a Satan como Cain.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "CAIN",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Demon Baby",
+      "howToUnlock": "Derrota a The Lamb como Azazel.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "AZAZEL",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Forget Me Now",
+      "howToUnlock": "Derrota a Satan como ??? (Blue Baby).",
+      "version": "rebirth",
+      "category": "item",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "???",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The D20",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como Isaac.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "ISAAC",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Celtic Cross",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como Magdalene.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "MAGDALENE",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Abel",
+      "howToUnlock": "Derrota a The Lamb como Cain.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "CAIN",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Curved Horn",
+      "howToUnlock": "Derrota a The Lamb como Judas.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JUDAS",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Sacrificial Dagger",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como Eve.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EVE",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Bloody Lust",
+      "howToUnlock": "Derrota a Isaac como Samson.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "SAMSON",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Blood Penny",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como Samson.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "SAMSON",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Blood Rights",
+      "howToUnlock": "Derrota a Satan como Samson.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "SAMSON",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Polaroid",
+      "howToUnlock": "Derrota a Isaac 5 veces en total (con cualquier personaje).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Dad's Key",
+      "howToUnlock": "Recoge ambas piezas de llave (Key Pieces) de las salas de Ángel en una misma partida.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "ANGEL ROOM"
+      ]
+    },
+    {
+      "displayName": "Blue Candle",
+      "howToUnlock": "Dona 900 monedas a la Donation Machine (a lo largo de varias partidas).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DONACIÓN"
+      ]
+    },
+    {
+      "displayName": "Burnt Penny",
+      "howToUnlock": "Completa el desafío Beans! (Desafío #13).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Lucky Toe",
+      "howToUnlock": "Destruye 20 Shopkeepers (tenderos) haciéndolos explotar.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Epic Fetus",
+      "howToUnlock": "Completa el desafío The Family Man (Desafío #19).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "SMB Super Fan",
+      "howToUnlock": "Completa el desafío It's in the Cards (Desafío #14).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Counterfeit Coin",
+      "howToUnlock": "Juega 100 veces a Shell Game o Hell Game (máquinas de tragaperras especiales).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Guppy's Hairball",
+      "howToUnlock": "Conviértete en Guppy (recoge 3 objetos relacionados con Guppy en una misma partida).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "TRANSFORMACIÓN"
+      ]
+    },
+    {
+      "displayName": "Isaac's Head",
+      "howToUnlock": "Completa el Boss Rush como Isaac.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "ISAAC",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Maggy's Faith",
+      "howToUnlock": "Derrota a The Lamb como Magdalene.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "MAGDALENE",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Judas' Tongue",
+      "howToUnlock": "Derrota a Satan como Judas.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JUDAS",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "???'s Soul",
+      "howToUnlock": "Derrota a The Lamb como ??? (Blue Baby).",
+      "version": "rebirth",
+      "category": "item",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "???",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Samson's Lock",
+      "howToUnlock": "Derrota a The Lamb como Samson.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "SAMSON",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Cain's Eye",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como Cain.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "CAIN",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Eve's Bird Foot",
+      "howToUnlock": "Derrota a Isaac como Eve.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EVE",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Left Hand",
+      "howToUnlock": "Derrota a Ultra Pride, o derrota a ??? (Blue Baby) como Judas.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JUDAS",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Negative",
+      "howToUnlock": "Derrota a Satan 5 veces en total (con cualquier personaje).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Lucky Rock",
+      "howToUnlock": "Destruye 100 rocas en total.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Rune of Hagalaz",
+      "howToUnlock": "Completa el desafío Pitch Black (Desafío #1).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Rune of Jera",
+      "howToUnlock": "Completa el desafío High Brow (Desafío #2).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Rune of Ehwaz",
+      "howToUnlock": "Completa el desafío Head Trauma (Desafío #3).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Rune of Dagaz",
+      "howToUnlock": "Completa el desafío Darkness Falls (Desafío #4).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Rune of Ansuz",
+      "howToUnlock": "Completa el desafío The Tank (Desafío #5).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Rune of Perthro",
+      "howToUnlock": "Completa el desafío Solar System (Desafío #6).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Rune of Berkano",
+      "howToUnlock": "Completa el desafío Purist (Desafío #20).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Rune of Algiz",
+      "howToUnlock": "Completa el desafío Cat Got Your Tongue (Desafío #8).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Chaos Card",
+      "howToUnlock": "Completa el desafío Demo Man (Desafío #9).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Credit Card",
+      "howToUnlock": "Completa el desafío Cursed! (Desafío #10).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Rules Card",
+      "howToUnlock": "Completa el desafío Glass Cannon (Desafío #11).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Card Against Humanity",
+      "howToUnlock": "Completa el desafío When Life Gives You Lemons (Desafío #12).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Swallowed Penny",
+      "howToUnlock": "Completa el desafío Slow Roll (Desafío #15).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Robo-Baby 2.0",
+      "howToUnlock": "Completa el desafío Computer Savvy (Desafío #16).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Death's Touch",
+      "howToUnlock": "Completa el desafío Waka Waka (Desafío #17).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Technology .5",
+      "howToUnlock": "Completa el desafío The Host (Desafío #18).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Missing No.",
+      "howToUnlock": "Completa el Boss Rush como Lazarus.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LAZARUS",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Isaac's Tears",
+      "howToUnlock": "Derrota a Isaac como Isaac.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "ISAAC",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Guillotine",
+      "howToUnlock": "Derrota a Isaac como Judas.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JUDAS",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Judas' Shadow",
+      "howToUnlock": "Completa el Boss Rush como Judas.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JUDAS",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Maggy's Bow",
+      "howToUnlock": "Completa el Boss Rush como Magdalene.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "MAGDALENE",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Cain's Other Eye",
+      "howToUnlock": "Completa el Boss Rush como Cain.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "CAIN",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Black Lipstick",
+      "howToUnlock": "Derrota a The Lamb como Eve.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EVE",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Eve's Mascara",
+      "howToUnlock": "Completa el Boss Rush como Eve.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EVE",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Fate",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como ??? (Blue Baby).",
+      "version": "rebirth",
+      "category": "item",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "???",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "???'s Only Friend",
+      "howToUnlock": "Completa el Boss Rush como ??? (Blue Baby).",
+      "version": "rebirth",
+      "category": "item",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "???",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Samson's Chains",
+      "howToUnlock": "Completa el Boss Rush como Samson.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "SAMSON",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Lazarus' Rags",
+      "howToUnlock": "Derrota a Isaac como Lazarus.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LAZARUS",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Broken Ankh",
+      "howToUnlock": "Derrota a Satan como Lazarus.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LAZARUS",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Store Credit",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como Lazarus.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LAZARUS",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Pandora's Box",
+      "howToUnlock": "Derrota a The Lamb como Lazarus.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LAZARUS",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Suicide King",
+      "howToUnlock": "Completa el desafío Suicide King (Desafío #7). NOTA: Hay un conflicto de nombre con el desafío #160 del juego.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Blank Card",
+      "howToUnlock": "Derrota a Isaac como Eden.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EDEN",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Book of Secrets",
+      "howToUnlock": "Derrota a Satan como Eden.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EDEN",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Mysterious Paper",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como Eden.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EDEN",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Mystery Sack",
+      "howToUnlock": "Derrota a The Lamb como Eden.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EDEN",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Undefined",
+      "howToUnlock": "Completa el Boss Rush como Eden.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EDEN",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Satanic Bible",
+      "howToUnlock": "Derrota a Isaac como Azazel.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "AZAZEL",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Daemon's Tail",
+      "howToUnlock": "Derrota a Satan como Azazel.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "AZAZEL",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Abaddon",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como Azazel.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "AZAZEL",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Isaac's Heart",
+      "howToUnlock": "Derrota a Isaac como The Lost.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "The Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE LOST",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Mind",
+      "howToUnlock": "Derrota a Satan como The Lost.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "The Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE LOST",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Body",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como The Lost.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "The Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE LOST",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Soul",
+      "howToUnlock": "Derrota a The Lamb como The Lost.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "The Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE LOST",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The D100",
+      "howToUnlock": "Completa el Boss Rush como The Lost.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "The Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE LOST",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Blue Map",
+      "howToUnlock": "Dona 10 monedas a la Donation Machine.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DONACIÓN"
+      ]
+    },
+    {
+      "displayName": "There's Options",
+      "howToUnlock": "Dona 50 monedas a la Donation Machine.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DONACIÓN"
+      ]
+    },
+    {
+      "displayName": "Black Candle",
+      "howToUnlock": "Dona 150 monedas a la Donation Machine.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DONACIÓN"
+      ]
+    },
+    {
+      "displayName": "Red Candle",
+      "howToUnlock": "Dona 400 monedas a la Donation Machine.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DONACIÓN"
+      ]
+    },
+    {
+      "displayName": "Stop Watch",
+      "howToUnlock": "Dona 999 monedas a la Donation Machine.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DONACIÓN"
+      ]
+    },
+    {
+      "displayName": "Wire Coat Hanger",
+      "howToUnlock": "Derrota a Mom's Heart 4 veces.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Ipecac",
+      "howToUnlock": "Derrota a Mom's Heart 6 veces.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Experimental Treatment",
+      "howToUnlock": "Derrota a Mom's Heart 7 veces.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Head of Krampus",
+      "howToUnlock": "Derrota a Krampus.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Super Meat Boy",
+      "howToUnlock": "Crea a Super Meat Boy recogiendo 4 copias de Cube of Meat en una misma partida.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "Butter Bean",
+      "howToUnlock": "Destruye 100 cacas (Poops) en total.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Little Baggy",
+      "howToUnlock": "Recoge 2 objetos con la etiqueta 'syringe' en una misma partida (Roid Rage, The Virus, Growth Hormones, Experimental Treatment, Speed Ball).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "COLECCIÓN"
+      ]
+    },
+    {
+      "displayName": "Blood Bag",
+      "howToUnlock": "Usa la Blood Donation Machine 30 veces en total.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO"
+      ]
+    },
+    {
+      "displayName": "The D4",
+      "howToUnlock": "Destruye 30 Slot Machines haciéndolas explotar.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Missing Poster",
+      "howToUnlock": "Derrota a The Lamb como Isaac.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "ISAAC",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Rubber Cement",
+      "howToUnlock": "Derrota a Mom's Heart 2 veces.",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Godhead",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como The Lost.",
+      "version": "rebirth",
+      "category": "item",
+      "character": "The Lost",
+      "secret": true,
+      "tags": [
+        "OBJETO",
+        "THE LOST",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Darkness Falls",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como Eve para desbloquear el desafío Darkness Falls (#4).",
+      "version": "rebirth",
+      "category": "challenge",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "EVE",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Tank",
+      "howToUnlock": "Ten 7 o más contenedores de corazón rojo al mismo tiempo para desbloquear el desafío The Tank (#5).",
+      "version": "rebirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Solar System",
+      "howToUnlock": "Derrota a Mom's Heart 3 veces para desbloquear el desafío Solar System (#6).",
+      "version": "rebirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Suicide King (Challenge #7)",
+      "howToUnlock": "Desbloquea a Lazarus (ten 4 o más corazones de alma al mismo tiempo) para desbloquear el desafío Suicide King (#7). ⚠ NOTA: El nombre exacto en Steam puede diferir del objeto homónimo. Verificar.",
+      "version": "rebirth",
+      "category": "challenge",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "LAZARUS"
+      ]
+    },
+    {
+      "displayName": "Cat Got Your Tongue",
+      "howToUnlock": "Conviértete en Guppy para desbloquear el desafío Cat Got Your Tongue (#8).",
+      "version": "rebirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "TRANSFORMACIÓN"
+      ]
+    },
+    {
+      "displayName": "Demo Man",
+      "howToUnlock": "Derrota a Mom's Heart 9 veces para desbloquear el desafío Demo Man (#9).",
+      "version": "rebirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Cursed!",
+      "howToUnlock": "Ten 7 o más contenedores de corazón rojo al mismo tiempo para desbloquear el desafío Cursed! (#10).",
+      "version": "rebirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Glass Cannon",
+      "howToUnlock": "Completa el desafío The Family Man (#19), derrota a Lokii y ten desbloqueado a Judas para desbloquear el desafío Glass Cannon (#11).",
+      "version": "rebirth",
+      "category": "challenge",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "JUDAS",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Family Man",
+      "howToUnlock": "Recoge ambas piezas de llave (Key Pieces) de las salas de Ángel en una misma partida para desbloquear el desafío The Family Man (#19).",
+      "version": "rebirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "ANGEL ROOM"
+      ]
+    },
+    {
+      "displayName": "Purist",
+      "howToUnlock": "Derrota a Mom para desbloquear el desafío Purist (#20).",
+      "version": "rebirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Lost Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Isaac.",
+      "version": "rebirth",
+      "category": "co-op",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "ISAAC",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Cute Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Magdalene.",
+      "version": "rebirth",
+      "category": "co-op",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "MAGDALENE",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Crow Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Eve.",
+      "version": "rebirth",
+      "category": "co-op",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "EVE",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Shadow Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Judas.",
+      "version": "rebirth",
+      "category": "co-op",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "JUDAS",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Glass Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Cain.",
+      "version": "rebirth",
+      "category": "co-op",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "CAIN",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Wrapped Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Lazarus.",
+      "version": "rebirth",
+      "category": "co-op",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "LAZARUS",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Begotten Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Azazel.",
+      "version": "rebirth",
+      "category": "co-op",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "AZAZEL",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Dead Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como ??? (Blue Baby).",
+      "version": "rebirth",
+      "category": "co-op",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "???",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "-0- Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como The Lost.",
+      "version": "rebirth",
+      "category": "co-op",
+      "character": "The Lost",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "THE LOST",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Glitch Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Eden.",
+      "version": "rebirth",
+      "category": "co-op",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "EDEN",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Fighting Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Samson.",
+      "version": "rebirth",
+      "category": "co-op",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "SAMSON",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Store Upgrade lv.1",
+      "howToUnlock": "Dona 20 monedas a la Donation Machine.",
+      "version": "rebirth",
+      "category": "donation",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "TIENDA",
+        "DONACIÓN"
+      ]
+    },
+    {
+      "displayName": "Store Upgrade lv.2",
+      "howToUnlock": "Dona 100 monedas a la Donation Machine.",
+      "version": "rebirth",
+      "category": "donation",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "TIENDA",
+        "DONACIÓN"
+      ]
+    },
+    {
+      "displayName": "Store Upgrade lv.3",
+      "howToUnlock": "Dona 200 monedas a la Donation Machine.",
+      "version": "rebirth",
+      "category": "donation",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "TIENDA",
+        "DONACIÓN"
+      ]
+    },
+    {
+      "displayName": "Store Upgrade lv.4",
+      "howToUnlock": "Dona 600 monedas a la Donation Machine.",
+      "version": "rebirth",
+      "category": "donation",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "TIENDA",
+        "DONACIÓN"
+      ]
+    },
+    {
+      "displayName": "Basement Boy",
+      "howToUnlock": "Completa el Capítulo 1 (Basement/Cellar) sin recibir daño.",
+      "version": "rebirth",
+      "category": "progression",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "NO DAMAGE",
+        "PROGRESIÓN"
+      ]
+    },
+    {
+      "displayName": "Spelunker Boy",
+      "howToUnlock": "Completa el Capítulo 2 (Caves/Catacombs) sin recibir daño.",
+      "version": "rebirth",
+      "category": "progression",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "NO DAMAGE",
+        "PROGRESIÓN"
+      ]
+    },
+    {
+      "displayName": "Dark Boy",
+      "howToUnlock": "Completa el Capítulo 3 (Depths/Necropolis) sin recibir daño.",
+      "version": "rebirth",
+      "category": "progression",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "NO DAMAGE",
+        "PROGRESIÓN"
+      ]
+    },
+    {
+      "displayName": "Mama's Boy",
+      "howToUnlock": "Completa el Capítulo 4 (The Womb/Utero) sin recibir daño.",
+      "version": "rebirth",
+      "category": "progression",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "NO DAMAGE",
+        "PROGRESIÓN"
+      ]
+    },
+    {
+      "displayName": "Dead Boy",
+      "howToUnlock": "Completa el Capítulo 6 (The Chest o Dark Room) sin recibir daño.",
+      "version": "rebirth",
+      "category": "progression",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "NO DAMAGE",
+        "PROGRESIÓN"
+      ]
+    },
+    {
+      "displayName": "Golden God!",
+      "howToUnlock": "Derrota a ??? (Blue Baby) y a The Lamb (completa ambos finales del juego).",
+      "version": "rebirth",
+      "category": "collection",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "COLECCIÓN",
+        "BOSS",
+        "100%"
+      ]
+    },
+    {
+      "displayName": "!Platinum God!",
+      "howToUnlock": "Recoge todos los objetos del juego base (sin DLC) y desbloquea todos los secretos y finales (excepto The Lost y sus 6 objetos).",
+      "version": "rebirth",
+      "category": "collection",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "COLECCIÓN",
+        "100%"
+      ]
+    },
+    {
+      "displayName": "The Real Platinum God",
+      "howToUnlock": "Recoge absolutamente todos los objetos del juego base y desbloquea todos los secretos y finales incluyendo The Lost.",
+      "version": "rebirth",
+      "category": "collection",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "COLECCIÓN",
+        "100%"
+      ]
+    },
+    {
+      "displayName": "Lord of the Flies",
+      "howToUnlock": "Conviértete en Beelzebub (recoge 3 objetos de moscas en una misma partida: Skatole, Halo of Flies, etc.).",
+      "version": "rebirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "TRANSFORMACIÓN",
+        "OBJETO"
+      ]
+    }
   ]
 }
