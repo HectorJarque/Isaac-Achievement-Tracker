@@ -4,7 +4,7 @@
 
 export default async function handler(req, res) {
   // CORS: Permitir que nuestro frontend de GitHub Pages haga peticiones aquí
-  const FRONTEND_URL = process.env.FRONTEND_URL || 'https://tu-usuario.github.io';
+  const FRONTEND_URL = process.env.FRONTEND_URL;
   res.setHeader('Access-Control-Allow-Origin', FRONTEND_URL);
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');

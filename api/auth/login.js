@@ -4,8 +4,8 @@
 export default function handler(req, res) {
   // La URL base de tu frontend en GitHub Pages
   // Vercel lee esto de las variables de entorno que tú configuras
-  const FRONTEND_URL = process.env.FRONTEND_URL || 'https://tu-usuario.github.io/isaac-tracker';
-  const BACKEND_URL = process.env.BACKEND_URL || 'https://tu-backend.vercel.app';
+  const FRONTEND_URL = process.env.FRONTEND_URL;
+  const BACKEND_URL = process.env.BACKEND_URL;
 
   // Construimos la URL de Steam OpenID con todos los parámetros requeridos
   const params = new URLSearchParams({

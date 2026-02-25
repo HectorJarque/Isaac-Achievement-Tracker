@@ -5,8 +5,7 @@
 //   4. Renderizar todo en pantalla con filtros y búsqueda
 
 // ── CONFIGURACIÓN ──
-// IMPORTANTE: Cambiar esta URL por la URL real de backend en Vercel
-const BACKEND_URL = 'https://tu-backend.vercel.app';
+const BACKEND_URL = 'https://isaac-achievement-tracker.vercel.app';
 
 // ── ESTADO DE LA APLICACIÓN ──
 let allAchievements = []; // Todos los logros combinados (Steam + nuestra DB)
