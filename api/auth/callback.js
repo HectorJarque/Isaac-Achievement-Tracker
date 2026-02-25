@@ -2,8 +2,9 @@
 // Esto se hace enviando los parámetros de vuelta a Steam para que los confirme.
 
 export default async function handler(req, res) {
-  const FRONTEND_URL = process.env.FRONTEND_URL || 'https://tu-usuario.github.io/isaac-tracker';
-  const BACKEND_URL = process.env.BACKEND_URL || 'https://tu-backend.vercel.app';
+  const FRONTEND_URL = process.env.FRONTEND_URL || 'https://hectorjarque.github.io';
+  const SITE_URL = process.env.SITE_URL || FRONTEND_URL;
+  const BACKEND_URL = process.env.BACKEND_URL || 'https://isaac-achievement-tracker.vercel.app';
 
   try {
     // Steam nos envía todos los parámetros openid en la query string
@@ -11,7 +12,7 @@ export default async function handler(req, res) {
 
     // Paso 1: Verificar que Steam confirmó el login (no solo que llegó alguien a esta URL)
     if (query['openid.mode'] !== 'id_res') {
-      return res.redirect(`${FRONTEND_URL}?error=login_cancelled`);
+      return res.redirect(`${SITE_URL}?error=login_cancelled`);
     }
 
     // Paso 2: Verificar la autenticidad enviando los parámetros de vuelta a Steam
@@ -33,7 +34,7 @@ export default async function handler(req, res) {
 
     // Steam responde con "is_valid:true" si la autenticación es legítima
     if (!verifyText.includes('is_valid:true')) {
-      return res.redirect(`${FRONTEND_URL}?error=invalid_auth`);
+      return res.redirect(`${SITE_URL}?error=invalid_auth`);
     }
 
     // Paso 3: Extraer el Steam ID del campo "claimed_id"
@@ -42,7 +43,7 @@ export default async function handler(req, res) {
     const steamIdMatch = claimedId.match(/\/id\/(\d+)$/);
 
     if (!steamIdMatch) {
-      return res.redirect(`${FRONTEND_URL}?error=no_steamid`);
+      return res.redirect(`${SITE_URL}?error=no_steamid`);
     }
 
     const steamId = steamIdMatch[1];
@@ -78,10 +79,10 @@ export default async function handler(req, res) {
       dashboardParams.set('avatar', playerInfo.avatar);
     }
 
-    res.redirect(`${FRONTEND_URL}/dashboard.html?${dashboardParams.toString()}`);
+    res.redirect(`${SITE_URL}/dashboard.html?${dashboardParams.toString()}`);
 
   } catch (error) {
     console.error('Error en callback de Steam:', error);
-    res.redirect(`${FRONTEND_URL}?error=server_error`);
+    res.redirect(`${SITE_URL}?error=server_error`);
   }
 }
