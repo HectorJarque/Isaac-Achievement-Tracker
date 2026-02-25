@@ -1,12 +1,17 @@
 {
-  "_info": "Logros de The Binding of Isaac: Rebirth indexados por displayName. Versión: rebirth.",
+  "_info": "Base de datos de logros de The Binding of Isaac. Match por displayName exacto. Versiones: rebirth, afterbirth, afterbirth_plus, repentance, repentance_plus.",
   "_errors_detected": [
     "Wrapped Baby (n°172): El JSON fuente fusionaba las condiciones de Azazel y Lazarus. Corregido: solo Azazel.",
     "Begotten Baby (n°173): El JSON fuente fusionaba las condiciones de Lazarus y Azazel. Corregido: solo Lazarus.",
     "Darkness Falls (n°157): El JSON fuente duplicaba/fusionaba el texto de condición. Corregido: 'Derrota a ??? como Eve'.",
     "Suicide King desafío (n°160): El JSON fuente incluía 'Defeat Mom's Heart 11 times' erróneamente. La condición real es desbloquear a Lazarus.",
     "Suicide King (n°120 vs n°160): Dos secretos del juego comparten el nombre 'Suicide King'. Pueden tener displayNames distintos en Steam. Verificar.",
-    "Blue Candle (n°59): La condición '900 monedas' puede ser incorrecta según la wiki. Verificar."
+    "Blue Candle (n°59): La condición '900 monedas' puede ser incorrecta según la wiki. Verificar.",
+    "Afterbirth #227 y #228: Ambos tienen el mismo name '2 new pills' en la fuente. Pueden tener displayNames distintos en Steam. Verificar.",
+    "Afterbirth #232 Kidney Stone: JSON fuente mezclaba los desafíos #29 y #30. Corregido a Onan's Streak (#29).",
+    "Afterbirth #233 Blank Rune: JSON fuente mezclaba los desafíos #29 y #30. Corregido a The Guardian (#30).",
+    "Afterbirth #270 I RULE!: Condición triple/ambigua en fuente. Simplificada. Verificar con la wiki.",
+    "Afterbirth #273 Onan's Streak (challenge): Condición ambigua en fuente. Simplificada a 'Derrota a Mom'."
   ],
   "achievements": [
     {
@@ -1982,19 +1987,6 @@
     },
     {
       "displayName": "Wrapped Baby",
-      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Lazarus.",
-      "version": "rebirth",
-      "category": "co-op",
-      "character": "Lazarus",
-      "secret": false,
-      "tags": [
-        "CO-OP",
-        "LAZARUS",
-        "HARD MODE"
-      ]
-    },
-    {
-      "displayName": "Begotten Baby",
       "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Azazel.",
       "version": "rebirth",
       "category": "co-op",
@@ -2003,6 +1995,19 @@
       "tags": [
         "CO-OP",
         "AZAZEL",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Begotten Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Lazarus.",
+      "version": "rebirth",
+      "category": "co-op",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "LAZARUS",
         "HARD MODE"
       ]
     },
@@ -2213,6 +2218,1329 @@
       "tags": [
         "TRANSFORMACIÓN",
         "OBJETO"
+      ]
+    },
+    {
+      "displayName": "Fart Baby",
+      "howToUnlock": "Derrota a Hush como Isaac.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "ISAAC",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Purity",
+      "howToUnlock": "Derrota a Hush como Magdalene.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "MAGDALENE",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "D12",
+      "howToUnlock": "Derrota a Hush como Cain.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "CAIN",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Betrayal",
+      "howToUnlock": "Derrota a Hush como Judas.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JUDAS",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Fate's Reward",
+      "howToUnlock": "Derrota a Hush como ??? (Blue Baby).",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "???",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Athame",
+      "howToUnlock": "Derrota a Hush como Eve.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EVE",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Blind Rage",
+      "howToUnlock": "Derrota a Hush como Samson.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "SAMSON",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Maw of the Void",
+      "howToUnlock": "Derrota a Hush como Azazel.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "AZAZEL",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Empty Vessel",
+      "howToUnlock": "Derrota a Hush como Lazarus.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LAZARUS",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Eden's Blessing",
+      "howToUnlock": "Derrota a Hush como Eden.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EDEN",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Sworn Protector",
+      "howToUnlock": "Derrota a Hush como The Lost.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "The Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE LOST",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Incubus",
+      "howToUnlock": "Derrota a Hush como Lilith.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LILITH",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Keeper now holds... A Penny!",
+      "howToUnlock": "Derrota a Hush como Keeper.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "KEEPER",
+        "BOSS",
+        "HUSH"
+      ]
+    },
+    {
+      "displayName": "Lil' Chest",
+      "howToUnlock": "Derrota a Ultra Greed como Isaac.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "ISAAC",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Censer",
+      "howToUnlock": "Derrota a Ultra Greed como Magdalene.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "MAGDALENE",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Evil Eye",
+      "howToUnlock": "Derrota a Ultra Greed como Cain.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "CAIN",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "My Shadow",
+      "howToUnlock": "Derrota a Ultra Greed como Judas.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "JUDAS",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Cracked Dice",
+      "howToUnlock": "Derrota a Ultra Greed como ??? (Blue Baby).",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "???",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Black Feather",
+      "howToUnlock": "Derrota a Ultra Greed como Eve.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EVE",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Lusty Blood",
+      "howToUnlock": "Derrota a Ultra Greed como Samson.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "SAMSON",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Lilith",
+      "howToUnlock": "Derrota a Ultra Greed como Azazel para desbloquear a Lilith como personaje.",
+      "version": "afterbirth",
+      "category": "character",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "LILITH",
+        "AZAZEL",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Key Bum",
+      "howToUnlock": "Derrota a Ultra Greed como Lazarus.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LAZARUS",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "GB Bug",
+      "howToUnlock": "Derrota a Ultra Greed como Eden.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EDEN",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Zodiac",
+      "howToUnlock": "Derrota a Ultra Greed como The Lost.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "The Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE LOST",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Box of Friends",
+      "howToUnlock": "Derrota a Ultra Greed como Lilith.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LILITH",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Rib of Greed",
+      "howToUnlock": "Derrota a Ultra Greed como Keeper.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "KEEPER",
+        "BOSS",
+        "ULTRA GREED",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Cry Baby",
+      "howToUnlock": "Derrota a Mega Satan como Isaac.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "ISAAC",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Red Baby",
+      "howToUnlock": "Derrota a Mega Satan como Magdalene.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "MAGDALENE",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Green Baby",
+      "howToUnlock": "Derrota a Mega Satan como Cain.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "CAIN",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Brown Baby",
+      "howToUnlock": "Derrota a Mega Satan como Judas.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "JUDAS",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Blue Baby",
+      "howToUnlock": "Derrota a Mega Satan como ??? (Blue Baby).",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "???",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Lil' Baby",
+      "howToUnlock": "Derrota a Mega Satan como Eve.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "EVE",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Rage Baby",
+      "howToUnlock": "Derrota a Mega Satan como Samson.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "SAMSON",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Black Baby",
+      "howToUnlock": "Derrota a Mega Satan como Azazel.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "AZAZEL",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Long Baby",
+      "howToUnlock": "Derrota a Mega Satan como Lazarus.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "LAZARUS",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Yellow Baby",
+      "howToUnlock": "Derrota a Mega Satan como Eden.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "EDEN",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "White Baby",
+      "howToUnlock": "Derrota a Mega Satan como The Lost.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "The Lost",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "THE LOST",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Big Baby",
+      "howToUnlock": "Derrota a Mega Satan como Lilith.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "LILITH",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Noose Baby",
+      "howToUnlock": "Derrota a Mega Satan como Keeper.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "KEEPER",
+        "BOSS",
+        "MEGA SATAN"
+      ]
+    },
+    {
+      "displayName": "Rune Bag",
+      "howToUnlock": "Derrota a Isaac como Lilith.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LILITH",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Cambion Conception",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como Lilith.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LILITH",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Serpent's Kiss",
+      "howToUnlock": "Derrota a Satan como Lilith.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LILITH",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Succubus",
+      "howToUnlock": "Derrota a The Lamb como Lilith.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LILITH",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Immaculate Conception",
+      "howToUnlock": "Completa el Boss Rush como Lilith.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "LILITH",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Goat Head Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Lilith.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "LILITH",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Gold Heart",
+      "howToUnlock": "Completa el desafío XXXXXXXXL (Desafío #21).",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Get out of Jail Free Card",
+      "howToUnlock": "Completa el desafío SPEED! (Desafío #22).",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Gold Bomb",
+      "howToUnlock": "Completa el desafío Blue Bomber (Desafío #23).",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "2 new pills",
+      "howToUnlock": "Completa el desafío PAY TO PLAY (Desafío #24) para añadir 2 nuevas pastillas al pool.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "2 new pills",
+      "howToUnlock": "Completa el desafío Have a Heart (Desafío #25) para añadir 2 nuevas pastillas al pool.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Poker Chip",
+      "howToUnlock": "Completa el desafío I RULE! (Desafío #26).",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Stud Finder",
+      "howToUnlock": "Completa el desafío BRAINS! (Desafío #27).",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "D8",
+      "howToUnlock": "Completa el desafío PRIDE DAY! (Desafío #28).",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Kidney Stone",
+      "howToUnlock": "Completa el desafío Onan's Streak (Desafío #29).",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Blank Rune",
+      "howToUnlock": "Completa el desafío The Guardian (Desafío #30).",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DESAFÍO"
+      ]
+    },
+    {
+      "displayName": "Blue Womb",
+      "howToUnlock": "Derrota a Mom's Heart (o It Lives!) 10 veces para desbloquear el Blue Womb (Hush).",
+      "version": "afterbirth",
+      "category": "area",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "ÁREA",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "1001%",
+      "howToUnlock": "Desbloquea todos los secretos, finales y recoge todos los objetos del juego incluyendo los de Afterbirth.",
+      "version": "afterbirth",
+      "category": "collection",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "COLECCIÓN",
+        "100%"
+      ]
+    },
+    {
+      "displayName": "Keeper holds Wooden Nickel",
+      "howToUnlock": "Derrota a Isaac como Keeper.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "KEEPER",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Keeper holds Store Key",
+      "howToUnlock": "Derrota a Satan como Keeper.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "KEEPER",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Deep Pockets",
+      "howToUnlock": "Derrota a ??? (Blue Baby) como Keeper.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "KEEPER",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Karma",
+      "howToUnlock": "Derrota a The Lamb como Keeper.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "KEEPER",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Sticky Nickels",
+      "howToUnlock": "Completa el Boss Rush como Keeper.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "KEEPER",
+        "BOSS RUSH"
+      ]
+    },
+    {
+      "displayName": "Super Greed Baby",
+      "howToUnlock": "Derrota a Mom's Heart en modo Difícil como Keeper.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "KEEPER",
+        "HARD MODE"
+      ]
+    },
+    {
+      "displayName": "Lucky Pennies",
+      "howToUnlock": "Dona 2 monedas a la Greed Donation Machine.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DONACIÓN",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Special Hanging Shopkeepers",
+      "howToUnlock": "Dona 14 monedas a la Greed Donation Machine.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "EXPLORACIÓN",
+        "DONACIÓN",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Wooden Nickel",
+      "howToUnlock": "Dona 33 monedas a la Greed Donation Machine.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DONACIÓN",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Cain holds Paperclip",
+      "howToUnlock": "Dona 68 monedas a la Greed Donation Machine para que Cain empiece con Paperclip.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "CAIN",
+        "DONACIÓN",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Everything is Terrible 2!!!",
+      "howToUnlock": "Dona 111 monedas a la Greed Donation Machine para aumentar la dificultad del Greed Mode.",
+      "version": "afterbirth",
+      "category": "progression",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "PROGRESIÓN",
+        "DIFICULTAD",
+        "DONACIÓN",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Special Shopkeepers",
+      "howToUnlock": "Dona 234 monedas a la Greed Donation Machine.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "EXPLORACIÓN",
+        "DONACIÓN",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Eve now holds Razor Blade",
+      "howToUnlock": "Dona 439 monedas a la Greed Donation Machine para que Eve empiece con Razor Blade.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "EVE",
+        "DONACIÓN",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Store Key",
+      "howToUnlock": "Dona 666 monedas a la Greed Donation Machine.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "DONACIÓN",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Lost holds Holy Mantle",
+      "howToUnlock": "Dona 879 monedas a la Greed Donation Machine para que The Lost empiece con Holy Mantle.",
+      "version": "afterbirth",
+      "category": "item",
+      "character": "The Lost",
+      "secret": false,
+      "tags": [
+        "OBJETO",
+        "THE LOST",
+        "DONACIÓN",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Keeper",
+      "howToUnlock": "Dona 1000 monedas a la Greed Donation Machine para desbloquear a Keeper como personaje.",
+      "version": "afterbirth",
+      "category": "character",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "PERSONAJE",
+        "KEEPER",
+        "DONACIÓN",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Generosity",
+      "howToUnlock": "Dona 999 monedas a la Greed Donation Machine.",
+      "version": "afterbirth",
+      "category": "donation",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DONACIÓN",
+        "GREED MODE"
+      ]
+    },
+    {
+      "displayName": "Hive Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como ??? (Blue Baby).",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "???",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "???",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Buddy Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como Isaac.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "ISAAC",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Colorful Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como Magdalene.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Magdalene",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "MAGDALENE",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Whore Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como Eve.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Eve",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "EVE",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Cracked Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como Eden.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Eden",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "EDEN",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Dripping Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como Lazarus.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Lazarus",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "LAZARUS",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Blinding Baby",
+      "howToUnlock": "Usa la carta XIX - The Sun mientras llevas el objeto Blank Card.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "CO-OP"
+      ]
+    },
+    {
+      "displayName": "Sucky Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como Azazel.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Azazel",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "AZAZEL",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Dark Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como Lilith.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Lilith",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "LILITH",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Picky Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como Cain.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "CAIN",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Revenge Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como Samson.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Samson",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "SAMSON",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Belial Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como Judas.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Judas",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "JUDAS",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "Sale Baby",
+      "howToUnlock": "Consigue todos los Completion Marks en modo Difícil como Keeper.",
+      "version": "afterbirth",
+      "category": "co-op",
+      "character": "Keeper",
+      "secret": false,
+      "tags": [
+        "CO-OP",
+        "KEEPER",
+        "HARD MODE",
+        "COMPLETION MARKS"
+      ]
+    },
+    {
+      "displayName": "XXXXXXXXL",
+      "howToUnlock": "Derrota a Mom para desbloquear el desafío XXXXXXXXL (#21).",
+      "version": "afterbirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "SPEED!",
+      "howToUnlock": "Derrota a Mom para desbloquear el desafío SPEED! (#22).",
+      "version": "afterbirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Blue Bomber",
+      "howToUnlock": "Destruye 10 Tinted Rocks y derrota a Mom's Heart 11 veces para desbloquear el desafío Blue Bomber (#23).",
+      "version": "afterbirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "PAY TO PLAY",
+      "howToUnlock": "Derrota a Isaac como Cain y destruye 10 Tinted Rocks para desbloquear el desafío PAY TO PLAY (#24).",
+      "version": "afterbirth",
+      "category": "challenge",
+      "character": "Cain",
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "CAIN",
+        "BOSS",
+        "EXPLORACIÓN"
+      ]
+    },
+    {
+      "displayName": "Have a Heart",
+      "howToUnlock": "Derrota a Mom para desbloquear el desafío Have a Heart (#25).",
+      "version": "afterbirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "I RULE!",
+      "howToUnlock": "Ten desbloqueado The Negative y derrota a ??? o The Lamb, además de haber derrotado a Satan como Isaac, para desbloquear el desafío I RULE! (#26).",
+      "version": "afterbirth",
+      "category": "challenge",
+      "character": "Isaac",
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "ISAAC",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "BRAINS!",
+      "howToUnlock": "Derrota a Isaac 5 veces en total para desbloquear el desafío BRAINS! (#27).",
+      "version": "afterbirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "PRIDE DAY!",
+      "howToUnlock": "Derrota a Mom para desbloquear el desafío PRIDE DAY! (#28).",
+      "version": "afterbirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Onan's Streak",
+      "howToUnlock": "Derrota a Mom para desbloquear el desafío Onan's Streak (#29).",
+      "version": "afterbirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "The Guardian",
+      "howToUnlock": "Derrota a Mom para desbloquear el desafío The Guardian (#30).",
+      "version": "afterbirth",
+      "category": "challenge",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "DESAFÍO",
+        "BOSS"
+      ]
+    },
+    {
+      "displayName": "Mega",
+      "howToUnlock": "Derrota a Mega Satan con todos los personajes (excepto los Tainted).",
+      "version": "afterbirth",
+      "category": "boss",
+      "character": null,
+      "secret": false,
+      "tags": [
+        "BOSS",
+        "MEGA SATAN",
+        "100%"
       ]
     }
   ]
