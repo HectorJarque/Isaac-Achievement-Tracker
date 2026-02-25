@@ -1,18 +1,6 @@
 {
   "_info": "Base de datos completa de logros de The Binding of Isaac (Rebirth, Afterbirth, Afterbirth+, Repentance, Repentance+). Match por displayName exacto (case-insensitive). Repentance+ solo contiene los 3 logros de juego online.",
   "_errors_corrected": [
-    "Rebirth #172 Wrapped Baby: CORREGIDO a Lazarus (fuente tenía Azazel).",
-    "Rebirth #173 Begotten Baby: CORREGIDO a Azazel (fuente tenía Lazarus).",
-    "Rebirth #157 Darkness Falls: CORREGIDO condición duplicada — real: 'Derrota ??? como Eve'.",
-    "Rebirth #160 Suicide King (challenge): CORREGIDO condición errónea — real: 'Desbloquea a Lazarus'.",
-    "Rebirth #120/#160 Suicide King: Dos logros con mismo displayName en Steam (confirmado). Unificado en una entrada con nota.",
-    "Rebirth #59 Blue Candle: Confirmado 900 monedas — correcto.",
-    "Afterbirth #227/#228 '2 new pills': Mismo displayName en Steam (confirmado). Unificado en una entrada con nota.",
-    "Afterbirth #232 Kidney Stone: CORREGIDO a Onan's Streak (#29).",
-    "Afterbirth #233 Blank Rune: CORREGIDO a The Guardian (#30).",
-    "Afterbirth #270 I RULE!: Condición triple ambigua simplificada.",
-    "Afterbirth #273 Onan's Streak (challenge): Condición ambigua simplificada.",
-    "Repentance #516 DELETE THIS: Nombre y descripción son un error real dejado por los desarrolladores (confirmado en juego).",
     "Repentance #538 Temperance: Descripción 'INVALID_DESCRIPTION' es otro artefacto dejado en el juego."
   ],
   "achievements": [
