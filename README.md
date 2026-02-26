@@ -13,7 +13,7 @@
 
 Isaac Achievement Tracker es una herramienta web gratuita para jugadores de *The Binding of Isaac*. Conecta tu cuenta de Steam y verás de un vistazo todos tus logros desbloqueados, los que te faltan y cómo conseguirlos, organizados por versión del juego y por personaje.
 
-Cubre las cinco versiones del juego: Rebirth, Afterbirth, Afterbirth+, Repentance y Repentance+, con los 637 logros oficiales.
+Cubre las cinco versiones del juego: Rebirth, Afterbirth, Afterbirth+, Repentance y Repentance+, con los 641 logros oficiales.
 
 ---
 
